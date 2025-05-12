@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" />
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&family=Pinyon+Script&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+
+<script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?gUwfYWZ-iOk%3D&box=KYBzFzgOS2c%3D&aa=1&ab=2"></script>
+</head>
+
+<body class="page is-pageFade">
+<div class="page-transition"></div>
+
+<div id="wrapper">
+	<header id="header" class="clearfix">
+		<div class="header__headBox">
+		<div id="pageTopFix">
+			<div class="inBase clearfix">
+				<div class="header__siteTitleBox"><a href="<?php echo home_url(); ?>">
+					<dl>
+						<dt><img src="img/common/siteTitleLogo.png" alt="Kitamura Dental Clinic" /></dt>
+						<dd>
+							<h1 class="header__siteTitle"><img src="img/common/siteTitle.png" alt="きたむら歯科クリニック" /></h1>
+							<h1 class="header__siteTitle02">歯科衛生士向け 採用サイト</h1>
+						</dd>
+					</dl>
+				</a><!-- /.header__siteTitleBox --></div>
+				<nav class="globalNavi">
+					<ul class="globalNavi__menu__main">
+						<li><a href="<?php echo home_url(); ?>/about">私たちについて</a>
+							<ul class="globalNavi__menu__sub">
+								<li><a href="<?php echo home_url(); ?>/clinic">当院について</a></li>
+								<li><a href="<?php echo home_url(); ?>/idea">大切にしている考え方</a></li>
+								<li><a href="<?php echo home_url(); ?>/vision">ミッション・ビジョン</a></li>
+							</ul> 
+						</li>
+						<li><a href="<?php echo home_url(); ?>/benefit">福利厚生・教育環境</a></li>
+						<li><a href="<?php echo home_url(); ?>/advantage">当院の魅力</a>
+							<ul class="globalNavi__menu__sub">
+								<li><a href="<?php echo home_url(); ?>/attractive">当院の魅力100</a></li>
+								<li><a href="<?php echo home_url(); ?>/numeral">数字で見るきたむら歯科</a></li>
+							</ul> 
+						</li>
+						<li><a href="<?php echo home_url(); ?>/schedule">1日のスケジュール</a></li>
+						<li><a href="<?php echo home_url(); ?>/staff">スタッフ紹介</a></li>
+						<li><a href="<?php echo home_url(); ?>/director">院長紹介</a></li>
+						<li><a href="<?php echo home_url(); ?>/tofamily">ご家族さまへ</a></li>
+					</ul>
+					<ul class="globalNavi__menu__main">
+						<li><a href="<?php echo home_url(); ?>/question">よくあるご質問</a></li>
+						<li><a href="<?php echo home_url(); ?>/outline">医院概要</a></li>
+					</ul>
+					<div class="globalNavi__menu__contactButton"><a href="<?php echo home_url(); ?>/contact"><small>お問い合わせ</small><strong>メールフォーム</strong></a></div>
+				<!-- /.globalNavi --></nav>
+			<!-- /.inBase --></div>
+		<!-- /#pageTopFix --></div>
+		
+			<nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<div class="header__siteTitleBox"><a href="<?php echo home_url(); ?>">
+										<dl>
+											<dt><img src="img/common/siteTitleLogo.png" alt="Kitamura Dental Clinic" /></dt>
+											<dd>
+												<h1 class="header__siteTitle"><img src="img/common/siteTitle.png" alt="きたむら歯科クリニック" /></h1>
+												<h1 class="header__siteTitle02">歯科衛生士向け 採用サイト</h1>
+											</dd>
+										</dl>
+									</a><!-- /.header__siteTitleBox --></div>
+
+									<ul class="globalNaviSmall__menu__main">
+										<li><a href="<?php echo home_url(); ?>">ホーム</a>
+										<li><a href="<?php echo home_url(); ?>/about">私たちについて</a>
+											<ul class="globalNaviSmall__menu__sub">
+												<li><a href="<?php echo home_url(); ?>/clinic">当院について</a></li>
+												<li><a href="<?php echo home_url(); ?>/idea">大切にしている考え方</a></li>
+												<li><a href="<?php echo home_url(); ?>/vision">ミッション・ビジョン</a></li>
+											</ul> 
+										</li>
+										<li><a href="<?php echo home_url(); ?>/benefit">福利厚生・教育環境</a></li>
+										<li><a href="<?php echo home_url(); ?>/advantage">当院の魅力</a>
+											<ul class="globalNaviSmall__menu__sub">
+												<li><a href="<?php echo home_url(); ?>/attractive">当院の魅力100</a></li>
+												<li><a href="<?php echo home_url(); ?>/numeral">数字で見るきたむら歯科</a></li>
+											</ul> 
+										</li>
+										<li><a href="<?php echo home_url(); ?>/schedule">1日のスケジュール</a></li>
+										<li><a href="<?php echo home_url(); ?>/staff">スタッフ紹介</a></li>
+										<li><a href="<?php echo home_url(); ?>/director">院長紹介</a></li>
+										<li><a href="<?php echo home_url(); ?>/tofamily">ご家族さまへ</a></li>
+										<li><a href="<?php echo home_url(); ?>/question">よくあるご質問</a></li>
+										<li><a href="<?php echo home_url(); ?>/outline">医院概要</a></li>
+										<li><a href="<?php echo home_url(); ?>/contact"><strong>お問い合わせ</strong><small>メールフォーム</small></a></li>
+									</ul>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+
+
+		    <!-- /.globalNaviSmall --></nav>
+        <!-- /.header__headBox --></div>
+	<!-- /#header --></header>
+	
+	<div id="content" class="clearfix"><div class="contents__inner" class="clearfix">
+	<div class="contents__image01"></div>
+	<div class="contents__image02"></div>
+	<div class="contents__image03"></div>
+	<div class="contents__image04"></div>
+	<div class="contents__image05"></div>
+
+		<div class="article">
+
+	    	<div class="pageTitleBox">
+			<div class="inBase">
+				<h1 class="pageTitle">見出し見出し見出し</h1>
+				<figure><img src="img/common/imgPageTitle.jpg" alt="ページタイトル背景" /></figure>
+			<!-- /.inBase --></div>
+		<!-- /.pageTitleBox --></div>
+
+		<div class="topicpathBox">
+			<div class="inBase"><div class="inBase__inner clearfix">
+				<div class="topicpath">
+					<ul>
+						<li><a href="index.html">ホーム</a></li>
+						<li>タイトルタイトル</li>
+						<li>タイトルタイトルタイトル</li>
+					</ul>
+				<!-- /.topicpath --></div>
+			<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+		<!-- /.topicpathBox --></div>
+
+		<div class="inBase --typeBG01"><div class="inBase__inner clearfix">
+
+				<div class="pageBox sM">
+
+                			<div class="pageBox__content">
+						<p>テキストテキストテキスト<br>テキストテキストテキストテキスト<br>テキストテキストテキスト<br>テキストテキストテキスト<br></p>
+						<h2>見出しが入ります。見出しが入ります。</h2>
+						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<h3>見出し3が入りますテキストテキス</h3>
+						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<h4>見出し4が入りますテキストテキストテキストテキストテキスト</h4>
+						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<h5>見出し5が入りますテキストテキストテキストテキストテキスト</h5>
+						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+						<ul>
+							<li>ULリストが入ります。リストが入ります。リストが入ります。ULリストが入ります。リストが入ります。リストが入ります。ULリストが入ります。リストが入ります。リストが入ります。</li>
+							<li>ULリストが入ります。リストが入ります。リストが入ります。</li>
+							<li>ULリストが入ります。リストが入ります。リストが入ります。</li>
+						</ul>
+
+						<ol>
+							<li>OLリストが入ります。リストが入ります。リストが入ります。OLリストが入ります。リストが入ります。リストが入ります。OLリストが入ります。リストが入ります。リストが入ります。</li>
+							<li>OLリストが入ります。リストが入ります。リストが入ります。</li>
+							<li>OLリストが入ります。リストが入ります。リストが入ります。</li>
+						</ol>
+
+						<table>
+							<tr>
+								<th>テキスト</th>
+								<td>テキストテキスト</td>
+							</tr>
+							<tr>
+								<th>テキストテキスト</th>
+								<td>テキストテキストテキスト</td>
+							</tr>
+							<tr>
+								<th>テキスト</th>
+								<td>テキストテキスト</td>
+							</tr>
+							<tr>
+								<th>テキスト</th>
+								<td>テキストテキストテキスト</td>
+							</tr>
+							
+						</table>
+						
+						<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex sM">
+							<div class="wp-block-button is-style-button-style-1">
+								<a class="wp-block-button__link wp-element-button" href="https://kodomo.matsumurasika.com/">ボタンスタイル1</a>
+							</div>
+						</div>
+
+						<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex sM">
+							<div class="wp-block-button is-style-button-style-2">
+								<a class="wp-block-button__link wp-element-button" href="https://kodomo.matsumurasika.com/">ボタンスタイル2</a>
+							</div>
+						</div>
+
+						<div class="wp-block-cocoon-blocks-caption-box-1 caption-box block-box not-nested-style cocoon-block-caption-box sM">
+							<div class="caption-box-label block-box-label box-label">
+								<span class="caption-box-label-text block-box-label-text box-label-text">見出し付きテキスト枠</span>
+							</div>
+							<div class="caption-box-content block-box-content box-content">
+								<p>ここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入ります。</p>
+							</div>
+						</div>
+
+						<p class="is-style-paragraph-style-1">段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み</p>
+
+						<p class="is-style-paragraph-style-2">段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ</p>
+
+					<!-- /.pageBox__content --></div>
+				<!-- /.pageBox --></div>
+
+
+
+
+				<div class="archiveColumnBox">
+					<div class="archiveColumnBox__inner">
+
+						<div class="archiveColumnBox__column"><a href="#">
+							<figure class="archiveColumnBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/imgSample.jpg" alt="コラム画像" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<small class="archiveColumnBox__date">2024.00.00</small>
+							<h4 class="archiveColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							<p class="archiveColumnBox__columnSentence">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</a><!-- /.archiveColumnBox__column --></div>
+
+						<div class="archiveColumnBox__column"><a href="#">
+							<figure class="archiveColumnBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/imgSample.jpg" alt="コラム画像" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<small class="archiveColumnBox__date">2024.00.00</small>
+							<h4 class="archiveColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							<p class="archiveColumnBox__columnSentence">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</a><!-- /.archiveColumnBox__column --></div>
+
+						<div class="archiveColumnBox__column"><a href="#">
+							<figure class="archiveColumnBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/imgSample.jpg" alt="コラム画像" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<small class="archiveColumnBox__date">2024.00.00</small>
+							<h4 class="archiveColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							<p class="archiveColumnBox__columnSentence">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</a><!-- /.archiveColumnBox__column --></div>
+
+					<!-- /.archiveColumnBox__inner --></div>
+				<!-- /.archiveColumnBox --></div>
+
+
+				<div class="archiveListBox">
+					<a href="#"><span>2022.00.00</span><span>テキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキスト</span></a>
+				<!-- /.archiveListBox --></div>
+
+				<div class="archiveListBox">
+					<a href="#"><span>2022.00.00</span><span>テキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキスト</span></a>
+				<!-- /.archiveListBox --></div>
+
+
+				<div class="archiveListBox sM">
+					<a href="#"><span>2022.00.00</span><span>テキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキスト</span></a>
+				<!-- /.archiveListBox --></div>
+
+				<div class="archiveColumnBox">
+					<div class="archiveColumnBox__inner">
+
+						<div class="archiveColumnBox__column">
+							<a href="#">
+								<figure class="archiveColumnBox__image">
+									<div class="adjustBox adjustBox--type04">
+										<div class="adjustBox__inner">
+											<img src="img/common/imgSample.jpg" alt="コラム画像" />
+										<!-- /.adjustBox__inner --></div>
+									<!-- /.adjustBox --></div>
+									<small class="archiveColumnBox__date">2024.00.00</small>
+								</figure>
+								<h4 class="archiveColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							</a>
+							<ul class="archiveColumnBox__category">
+								<li><a href="#">働き方</a></li>
+								<li><a href="#">年収</a></li>
+							</ul>
+						<!-- /.archiveColumnBox__column --></div>
+
+						<div class="archiveColumnBox__column">
+							<a href="#">
+								<figure class="archiveColumnBox__image">
+									<div class="adjustBox adjustBox--type04">
+										<div class="adjustBox__inner">
+											<img src="img/common/imgSample.jpg" alt="コラム画像" />
+										<!-- /.adjustBox__inner --></div>
+									<!-- /.adjustBox --></div>
+									<small class="archiveColumnBox__date">2024.00.00</small>
+								</figure>
+								<h4 class="archiveColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							</a>
+							<ul class="archiveColumnBox__category">
+								<li><a href="#">働き方</a></li>
+								<li><a href="#">年収</a></li>
+							</ul>
+						<!-- /.archiveColumnBox__column --></div>
+
+						<div class="archiveColumnBox__column">
+							<a href="#">
+								<figure class="archiveColumnBox__image">
+									<div class="adjustBox adjustBox--type04">
+										<div class="adjustBox__inner">
+											<img src="img/common/imgSample.jpg" alt="コラム画像" />
+										<!-- /.adjustBox__inner --></div>
+									<!-- /.adjustBox --></div>
+									<small class="archiveColumnBox__date">2024.00.00</small>
+								</figure>
+								<h4 class="archiveColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							</a>
+							<ul class="archiveColumnBox__category">
+								<li><a href="#">働き方</a></li>
+								<li><a href="#">年収</a></li>
+							</ul>
+						<!-- /.archiveColumnBox__column --></div>
+
+					<!-- /.archiveColumnBox__inner --></div>
+				<!-- /.archiveColumnBox --></div>
+
+				<div class="archiveGalleryBox">
+					<div class="archiveGalleryBox__inner">
+
+						<div class="archiveGalleryBox__column"><div class="archiveGalleryBox__button">
+							<figure class="archiveGalleryBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/imgSample.jpg" alt="" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<a href="img/common/imgSample.jpg" class="luminousGallery is-notMovePage" title="あああああ"><i class="fa fa-fw icon-search-plus"></i></a>
+							<a href="#" class="archiveGalleryBox__link"><i class="fa fa-fw icon-link"></i></a>
+						</div><!-- /.archiveGalleryBox__column --></div>
+
+						<div class="archiveGalleryBox__column"><a href="img/common/imgSample.jpg" class="luminousGallery is-notMovePage" title="あああああ">
+							<figure class="archiveGalleryBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/no-image-v.png" alt="" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+						</a><!-- /.archiveGalleryBox__column --></div>
+
+						<div class="archiveGalleryBox__column"><a href="img/common/imgSample.jpg" class="luminousGallery is-notMovePage">
+							<figure class="archiveGalleryBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/no-image-v.png" alt="" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+						</a><!-- /.archiveGalleryBox__column --></div>
+
+						<div class="archiveGalleryBox__column"><a href="img/common/imgSample.jpg" class="luminousGallery is-notMovePage">
+							<figure class="archiveGalleryBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/imgSample.jpg" alt="" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+						</a><!-- /.archiveGalleryBox__column --></div>
+
+						<div class="archiveGalleryBox__column"><a href="img/common/noImage-square.png" class="luminousGallery is-notMovePage">
+							<figure class="archiveGalleryBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/imgSample.jpg" alt="" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+						</a><!-- /.archiveGalleryBox__column --></div>
+
+						<div class="archiveGalleryBox__column"><a href="img/common/imgSample.jpg" class="luminousGallery is-notMovePage">
+							<figure class="archiveGalleryBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/imgSample.jpg" alt="" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+						</a><!-- /.archiveGalleryBox__column --></div>
+					<!-- /.archiveGalleryBox__inner --></div>
+				<!-- /.archiveGalleryBox --></div>
+				
+				
+				
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+
+		<!-- /.article --></div>
+
+        
+	<!-- /.contents__inner --></div><!-- /#contents --></div>
+
+	
+	
+	<footer id="footer">
+
+
+		<div class="inBase clearfix">
+			<div class="footer__siteTitle"><img src="img/common/siteTitle02.png" alt="きたむら歯科クリニック" /></div>
+			<div class="footer__informationBox">
+				<div class="footer__information">
+					<dl>
+						<dt>Tel</dt>
+						<dd><b>0749-24-1050</b></dd>
+					</dl>
+					<dl>
+						<dt>Add</dt>
+						<dd>〒522-0041 滋賀県彦根市平田町137-8</dd>
+					</dl>
+					<div class="footer__SNS"><a href="#" target="_blank"><i class="fa fa-fw icon-instagram"></i><small>ktmrdc</small></a></div>
+					<table class="footer__medicalHours">
+						<tr>
+							<th>診療時間</th>
+							<th>月</th>
+							<th>火</th>
+							<th>水</th>
+							<th>木</th>
+							<th>金</th>
+							<th>土</th>
+							<th>日</th>
+						</tr>
+						<tr>
+							<td>午 前</td>
+							<td><i class="fa fa-fw icon-circle"></i></td>
+							<td><i class="fa fa-fw icon-circle"></i></td>
+							<td><i class="fa fa-fw icon-circle-thin"></i></td>
+							<td>&minus;</td>
+							<td><i class="fa fa-fw icon-circle"></i></td>
+							<td><i class="fa fa-fw icon-circle"></i></td>
+							<td>&minus;</td>
+						</tr>
+						<tr>
+							<td>午 後</td>
+							<td><i class="fa fa-fw icon-circle"></i></td>
+							<td><i class="fa fa-fw icon-circle"></i></td>
+							<td>&minus;</td>
+							<td>&minus;</td>
+							<td><i class="fa fa-fw icon-circle"></i></td>
+							<td><i class="fa fa-fw icon-circle-thin"></i></td>
+							<td>&minus;</td>
+						</tr>
+					</table>
+					<p class="footer__time">午前 8:00-12:00 午後 14:00-18:00　/　<br>水曜 8:00-13:00 土曜午後 14:00-17:00</p>
+	    			<!-- /.footer__information --></div>
+				<div class="footer__mapBox">
+					<div class="googleMapBox">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1628.869783675957!2d136.24527522428616!3d35.262734336590356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003d52795a5c4c5%3A0xb8fe1d2fd5249265!2z44GN44Gf44KA44KJ5q2v56eR44Kv44Oq44OL44OD44Kv!5e0!3m2!1sja!2sjp!4v1737946777932!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<!-- /.googleMapBox --></div>
+				<!-- /.footer__mapBox --></div>
+	    		<!-- /.footer__informationBox --></div>
+		<!-- /.inBase --></div>
+
+		<div class="footer__naviBox">
+			<div class="inBase clearfix">
+				<ul class="footer__navi">
+					<li><a href="<?php echo home_url(); ?>/about">私たちについて</a>
+						<ul class="footer__navi__sub">
+							<li><a href="<?php echo home_url(); ?>/clinic">当院について</a></li>
+							<li><a href="<?php echo home_url(); ?>/idea">大切にしている考え方</a></li>
+							<li><a href="<?php echo home_url(); ?>/vision">ミッション・ビジョン</a></li>
+						</ul> 
+					</li>
+					<li><a href="<?php echo home_url(); ?>/benefit">福利厚生・教育環境</a></li>
+					<li><a href="<?php echo home_url(); ?>/advantage">当院の魅力</a>
+						<ul class="footer__navi__sub">
+							<li><a href="<?php echo home_url(); ?>/attractive">当院の魅力100</a></li>
+							<li><a href="<?php echo home_url(); ?>/numeral">数字で見るきたむら歯科</a></li>
+						</ul> 
+					</li>
+					<li><a href="<?php echo home_url(); ?>/schedule">1日のスケジュール</a></li>
+					<li><a href="<?php echo home_url(); ?>/staff">スタッフ紹介</a></li>
+					<li><a href="<?php echo home_url(); ?>/director">院長紹介</a></li>
+					<li><a href="<?php echo home_url(); ?>/tofamily">ご家族さまへ</a></li>
+				</ul>
+				<ul class="footer__navi --type02">
+					<li><a href="<?php echo home_url(); ?>/question">よくあるご質問</a></li>
+					<li><a href="<?php echo home_url(); ?>/outline">医院概要</a></li>
+				</ul>
+			<!-- /.inBase --></div>
+		<!-- /.footer__naviBox --></div>
+	<!-- /#footer --></footer>
+
+	<small class="copyright">&copy; 2025 彦根のきたむら歯科クリニック 歯科衛生士採用サイト　All Rights Reserved.</small>
+        
+	<p id="btnRise"><a href="#wrapper"><span>TOP</span></a></p>
+	  
+	<div id="btnTelEmpty"></div>
+    
+    
+	<div id="btnPageBottom">
+	        <div class="btnPageBottom--btn">
+	            <a class="clearfix" href="<?php echo home_url(); ?>/recruitment#">
+			<span><b>新規採用</b>　衛生士</span>
+	                <span>募集要項</span>
+	            </a>
+	            <a class="clearfix" href="<?php echo home_url(); ?>/recruitment#">
+			<span><b>中途採用</b>　衛生士</span>
+	                <span>募集要項</span>
+	            </a>
+	        <!-- /.btnPageBottom--btn --></div>
+	<!-- /#btnPageBottom --></div>
+
+	<div class="sideBannerBox">
+    		<div class="sideBannerBox__banner">
+			<a href="<?php echo home_url(); ?>/recruitment#">
+		                <span>新卒採用<br>衛生士</span>
+		                <span>募集要項</span>
+			</a>
+		<!-- /.sideBanner --></div>
+    		<div class="sideBannerBox__banner">
+			<a href="<?php echo home_url(); ?>/recruitment#">
+		                <span>中途採用<br>衛生士</span>
+		                <span>募集要項</span>
+	     		</a>
+		<!-- /.sideBanner --></div>
+	<!-- /.sideBannerBox --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>

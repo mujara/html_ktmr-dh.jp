@@ -1,0 +1,28 @@
+@use "../_setting" as s;
+
+.sliderBox--typeFlow{
+	.swiper{
+		overflow: visible;
+	}
+	figure {
+		width:17em;
+		position: relative;
+		overflow: hidden;
+		margin-bottom:0.5em;
+		@include s.media(m){
+			width:26.9em;
+		}
+		img{
+			width: 100%;
+		}
+	}
+	.swiper-wrapper {
+		-webkit-transition-timing-function: linear !important;
+			transition-timing-function: linear !important;
+	}
+	.swiper-slide {
+		width: -webkit-max-content;
+		width: -moz-max-content;
+		width: max-content;
+	}
+}

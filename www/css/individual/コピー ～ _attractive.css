@@ -1,0 +1,394 @@
+@charset "UTF-8";
+#wrapper .tabBox--typeAttractive,
+.wp-admin #wpwrap .tabBox--typeAttractive {
+  display: block;
+  position: relative;
+  padding-top: 4em;
+  max-width: unset;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .tabBox--typeAttractive,
+.wp-admin #wpwrap .tabBox--typeAttractive {
+    padding-top: 5em;
+  }
+}
+#wrapper .tabBox--typeAttractive__button,
+.wp-admin #wpwrap .tabBox--typeAttractive__button {
+  width: 33.3333333333%;
+  font-size: 1em;
+  text-align: center;
+  display: block;
+  float: left;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  padding: 0.9rem 0.9rem;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .tabBox--typeAttractive__button,
+.wp-admin #wpwrap .tabBox--typeAttractive__button {
+    width: 16.6666666667%;
+    font-size: 1.2em;
+    padding: 1.8rem 0.9rem;
+  }
+}
+#wrapper .tabBox--typeAttractive__button:hover,
+.wp-admin #wpwrap .tabBox--typeAttractive__button:hover {
+  opacity: 0.5;
+}
+#wrapper .tabBox--typeAttractive__button span,
+.wp-admin #wpwrap .tabBox--typeAttractive__button span {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  background: #F5F5F5;
+  display: block;
+  font-size: 1.125em;
+  border-radius: 0.3em;
+  padding: 0.3em 0.5em;
+  border: #F5F5F5 solid 1px;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .tabBox--typeAttractive__button span,
+.wp-admin #wpwrap .tabBox--typeAttractive__button span {
+    padding: 0.3em 1em;
+  }
+}
+#wrapper .tabBox--typeAttractive__button:nth-child(2),
+.wp-admin #wpwrap .tabBox--typeAttractive__button:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -16.66%;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .tabBox--typeAttractive__button:nth-child(2),
+.wp-admin #wpwrap .tabBox--typeAttractive__button:nth-child(2) {
+    margin-left: -8.33%;
+  }
+}
+#wrapper .tabBox--typeAttractive__button:nth-child(2) span,
+.wp-admin #wpwrap .tabBox--typeAttractive__button:nth-child(2) span {
+  color: #5FAD47;
+}
+#wrapper .tabBox--typeAttractive__button:nth-child(4) span,
+.wp-admin #wpwrap .tabBox--typeAttractive__button:nth-child(4) span {
+  color: #FF9226;
+}
+#wrapper .tabBox--typeAttractive__button:nth-child(6) span,
+.wp-admin #wpwrap .tabBox--typeAttractive__button:nth-child(6) span {
+  color: #75D658;
+}
+#wrapper .tabBox--typeAttractive__button:nth-child(8) span,
+.wp-admin #wpwrap .tabBox--typeAttractive__button:nth-child(8) span {
+  color: #57A1F7;
+}
+#wrapper .tabBox--typeAttractive__button:nth-child(10) span,
+.wp-admin #wpwrap .tabBox--typeAttractive__button:nth-child(10) span {
+  color: #FFBA00;
+}
+#wrapper .tabBox--typeAttractive__button:nth-child(12) span,
+.wp-admin #wpwrap .tabBox--typeAttractive__button:nth-child(12) span {
+  color: #DBA848;
+}
+#wrapper .tabBox--typeAttractive__button:nth-child(14) span,
+.wp-admin #wpwrap .tabBox--typeAttractive__button:nth-child(14) span {
+  color: #FF868F;
+}
+#wrapper .tabBox--typeAttractive input[name=tabBox--typeAttractive__button],
+.wp-admin #wpwrap .tabBox--typeAttractive input[name=tabBox--typeAttractive__button] {
+  display: none;
+}
+#wrapper .tabBox--typeAttractive__content,
+.wp-admin #wpwrap .tabBox--typeAttractive__content {
+  clear: both;
+  width: 100%;
+  max-width: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 8em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .tabBox--typeAttractive__content,
+.wp-admin #wpwrap .tabBox--typeAttractive__content {
+    margin-top: 8em;
+  }
+}
+#wrapper .tabBox--typeAttractive__content > div,
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div {
+  background: #F5F5F5;
+  border-radius: 0.3em;
+  display: block;
+  width: 48%;
+  margin: 1%;
+  position: relative;
+  padding: 1em 0.5em 4em 0.7em;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .tabBox--typeAttractive__content > div,
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div {
+    width: 19%;
+    margin: 0.5%;
+    padding: 1em 0.5em 4em 0.7em;
+  }
+}
+#wrapper .tabBox--typeAttractive__content > div p,
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div p {
+  margin: 0;
+}
+#wrapper .tabBox--typeAttractive__content > div p:nth-child(1),
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div p:nth-child(1) {
+  font-size: 4em;
+  font-family: "Pinyon Script", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  right: 0.2em;
+  bottom: 0.1em;
+  opacity: 0.3;
+  color: #FFF;
+  line-height: 1;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .tabBox--typeAttractive__content > div p:nth-child(1),
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div p:nth-child(1) {
+    font-size: 5.875em;
+    right: 0.2em;
+    bottom: 0;
+  }
+}
+#wrapper .tabBox--typeAttractive__content > div p:nth-child(2),
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div p:nth-child(2) {
+  color: #FFF;
+  font-size: 1.3em;
+  font-family: "FOT-筑紫A丸ゴシック Std B";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.7;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .tabBox--typeAttractive__content > div p:nth-child(2),
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div p:nth-child(2) {
+    font-size: 1.5em;
+  }
+}
+@media print, screen and (min-width: 1280px) {
+  #wrapper .tabBox--typeAttractive__content > div p:nth-child(2),
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div p:nth-child(2) {
+    font-size: 1.4em;
+  }
+}
+#wrapper .tabBox--typeAttractive__content > div p:nth-child(3),
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div p:nth-child(3) {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  min-width: 5em;
+  font-size: 0.8em;
+  display: inline-block;
+  background: #FFF;
+  padding: 0.1em 1em;
+  border-radius: 2em;
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+}
+#wrapper .tabBox--typeAttractive__content > div.--category01,
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div.--category01 {
+  background: #FF9226;
+}
+#wrapper .tabBox--typeAttractive__content > div.--category01 p:nth-child(3),
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div.--category01 p:nth-child(3) {
+  color: #FF9226;
+}
+#wrapper .tabBox--typeAttractive__content > div.--category02,
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div.--category02 {
+  background: #75D658;
+}
+#wrapper .tabBox--typeAttractive__content > div.--category02 p:nth-child(3),
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div.--category02 p:nth-child(3) {
+  color: #75D658;
+}
+#wrapper .tabBox--typeAttractive__content > div.--category03,
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div.--category03 {
+  background: #57A1F7;
+}
+#wrapper .tabBox--typeAttractive__content > div.--category03 p:nth-child(3),
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div.--category03 p:nth-child(3) {
+  color: #57A1F7;
+}
+#wrapper .tabBox--typeAttractive__content > div.--category04,
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div.--category04 {
+  background: #FFBA00;
+}
+#wrapper .tabBox--typeAttractive__content > div.--category04 p:nth-child(3),
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div.--category04 p:nth-child(3) {
+  color: #FFBA00;
+}
+#wrapper .tabBox--typeAttractive__content > div.--category05,
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div.--category05 {
+  background: #DBA848;
+}
+#wrapper .tabBox--typeAttractive__content > div.--category05 p:nth-child(3),
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div.--category05 p:nth-child(3) {
+  color: #DBA848;
+}
+#wrapper .tabBox--typeAttractive__content > div.--category06,
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div.--category06 {
+  background: #FF868F;
+}
+#wrapper .tabBox--typeAttractive__content > div.--category06 p:nth-child(3),
+.wp-admin #wpwrap .tabBox--typeAttractive__content > div.--category06 p:nth-child(3) {
+  color: #FF868F;
+}
+#wrapper .tabBox--typeAttractive .tabBox--typeAttractive__content .wp-block-group,
+.wp-admin #wpwrap .tabBox--typeAttractive .tabBox--typeAttractive__content .wp-block-group {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: none;
+}
+#wrapper .tabBox--typeAttractive #tabBox--typeAttractive__label000:checked ~ .tabBox--typeAttractive__content .wp-block-group,
+.wp-admin #wpwrap .tabBox--typeAttractive #tabBox--typeAttractive__label000:checked ~ .tabBox--typeAttractive__content .wp-block-group {
+  display: block;
+  -webkit-animation-name: tabBox--typeAttractive--fade;
+          animation-name: tabBox--typeAttractive--fade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#wrapper .tabBox--typeAttractive #tabBox--typeAttractive__label001:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category01,
+.wp-admin #wpwrap .tabBox--typeAttractive #tabBox--typeAttractive__label001:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category01 {
+  display: block;
+  -webkit-animation-name: tabBox--typeAttractive--fade;
+          animation-name: tabBox--typeAttractive--fade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#wrapper .tabBox--typeAttractive #tabBox--typeAttractive__label002:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category02,
+.wp-admin #wpwrap .tabBox--typeAttractive #tabBox--typeAttractive__label002:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category02 {
+  display: block;
+  -webkit-animation-name: tabBox--typeAttractive--fade;
+          animation-name: tabBox--typeAttractive--fade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#wrapper .tabBox--typeAttractive #tabBox--typeAttractive__label003:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category03,
+.wp-admin #wpwrap .tabBox--typeAttractive #tabBox--typeAttractive__label003:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category03 {
+  display: block;
+  -webkit-animation-name: tabBox--typeAttractive--fade;
+          animation-name: tabBox--typeAttractive--fade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#wrapper .tabBox--typeAttractive #tabBox--typeAttractive__label004:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category04,
+.wp-admin #wpwrap .tabBox--typeAttractive #tabBox--typeAttractive__label004:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category04 {
+  display: block;
+  -webkit-animation-name: tabBox--typeAttractive--fade;
+          animation-name: tabBox--typeAttractive--fade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#wrapper .tabBox--typeAttractive #tabBox--typeAttractive__label005:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category05,
+.wp-admin #wpwrap .tabBox--typeAttractive #tabBox--typeAttractive__label005:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category05 {
+  display: block;
+  -webkit-animation-name: tabBox--typeAttractive--fade;
+          animation-name: tabBox--typeAttractive--fade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#wrapper .tabBox--typeAttractive #tabBox--typeAttractive__label006:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category06,
+.wp-admin #wpwrap .tabBox--typeAttractive #tabBox--typeAttractive__label006:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category06 {
+  display: block;
+  -webkit-animation-name: tabBox--typeAttractive--fade;
+          animation-name: tabBox--typeAttractive--fade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#wrapper .tabBox--typeAttractive input:checked + .tabBox--typeAttractive__button,
+.wp-admin #wpwrap .tabBox--typeAttractive input:checked + .tabBox--typeAttractive__button {
+  pointer-events: none;
+}
+#wrapper .tabBox--typeAttractive input#tabBox--typeAttractive__label000:checked + .tabBox--typeAttractive__button span,
+.wp-admin #wpwrap .tabBox--typeAttractive input#tabBox--typeAttractive__label000:checked + .tabBox--typeAttractive__button span {
+  border: #5FAD47 solid 1px;
+}
+#wrapper .tabBox--typeAttractive input#tabBox--typeAttractive__label001:checked + .tabBox--typeAttractive__button span,
+.wp-admin #wpwrap .tabBox--typeAttractive input#tabBox--typeAttractive__label001:checked + .tabBox--typeAttractive__button span {
+  border: #FF9226 solid 1px;
+}
+#wrapper .tabBox--typeAttractive input#tabBox--typeAttractive__label002:checked + .tabBox--typeAttractive__button span,
+.wp-admin #wpwrap .tabBox--typeAttractive input#tabBox--typeAttractive__label002:checked + .tabBox--typeAttractive__button span {
+  border: #75D658 solid 1px;
+}
+#wrapper .tabBox--typeAttractive input#tabBox--typeAttractive__label003:checked + .tabBox--typeAttractive__button span,
+.wp-admin #wpwrap .tabBox--typeAttractive input#tabBox--typeAttractive__label003:checked + .tabBox--typeAttractive__button span {
+  border: #57A1F7 solid 1px;
+}
+#wrapper .tabBox--typeAttractive input#tabBox--typeAttractive__label004:checked + .tabBox--typeAttractive__button span,
+.wp-admin #wpwrap .tabBox--typeAttractive input#tabBox--typeAttractive__label004:checked + .tabBox--typeAttractive__button span {
+  border: #FFBA00 solid 1px;
+}
+#wrapper .tabBox--typeAttractive input#tabBox--typeAttractive__label005:checked + .tabBox--typeAttractive__button span,
+.wp-admin #wpwrap .tabBox--typeAttractive input#tabBox--typeAttractive__label005:checked + .tabBox--typeAttractive__button span {
+  border: #DBA848 solid 1px;
+}
+#wrapper .tabBox--typeAttractive input#tabBox--typeAttractive__label006:checked + .tabBox--typeAttractive__button span,
+.wp-admin #wpwrap .tabBox--typeAttractive input#tabBox--typeAttractive__label006:checked + .tabBox--typeAttractive__button span {
+  border: #FF868F solid 1px;
+}
+#wrapper .tabBox--typeAttractive input:checked + .tabBox--typeAttractive__button:hover,
+.wp-admin #wpwrap .tabBox--typeAttractive input:checked + .tabBox--typeAttractive__button:hover {
+  opacity: 1;
+}
+#wrapper .tabBox--typeAttractive .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)),
+.wp-admin #wpwrap .tabBox--typeAttractive .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  margin-left: 1% !important;
+  margin-right: 1% !important;
+}
+@media print, screen and (min-width: 768px) {
+  #wrapper .tabBox--typeAttractive .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)),
+.wp-admin #wpwrap .tabBox--typeAttractive .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+    margin-left: 0.5% !important;
+    margin-right: 0.5% !important;
+  }
+}
+
+.wp-admin #wpwrap .tabBox--typeAttractive .tabBox--typeAttractive__content .wp-block-group {
+  display: block;
+}
+
+#container #wrapper .tabBox--typeAttractive input + .tabBox--typeAttractive__button:nth-child(2) {
+  margin-left: -16.66% !important;
+}
+@media print, screen and (min-width: 768px) {
+  #container #wrapper .tabBox--typeAttractive input + .tabBox--typeAttractive__button:nth-child(2) {
+    margin-left: -8.33% !important;
+  }
+}
+
+@-webkit-keyframes tabBox--typeAttractive--fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tabBox--typeAttractive--fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=../maps/individual/コピー ～ _attractive.css.map */

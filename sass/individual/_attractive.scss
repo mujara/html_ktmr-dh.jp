@@ -1,0 +1,306 @@
+@use "../_setting" as s;
+
+// .tabBox--typeAttractive
+#wrapper .tabBox--typeAttractive,
+.wp-admin #wpwrap .tabBox--typeAttractive {
+  	display: block;
+	position:relative;
+	padding-top:4em;
+	max-width: unset;
+	@include s.media(m){
+		padding-top:5em;
+	}
+  	&__button{
+  		width: calc(100%/3);
+  		font-size: 1em;
+  		text-align: center;
+  		display: block;
+  		float: left;
+		transition: all 0.5s ease;
+	    	cursor :pointer;
+  		padding: calc(s.$spaceSize/2) calc(s.$spaceSize/2);
+		@include s.media(m){
+  			width: calc(100%/6);
+  			font-size: 1.2em;
+  			padding: s.$spaceSize calc(s.$spaceSize/2);
+		}
+		&:hover{
+			opacity: 0.5;
+		}
+		span{
+			@include s.fontType01(Bold);
+			background:#F5F5F5;
+			display:block;
+			font-size:1.125em;
+			border-radius:0.3em;
+			padding:0.3em 0.5em;
+			border:#F5F5F5 solid 1px;
+			@include s.media(m){
+				padding:0.3em 1em;
+			}
+		}
+		&:nth-child(2){
+			position:absolute;
+			top:0;
+			left:50%;
+			margin-left:-16.66%;
+			@include s.media(m){
+				margin-left:-8.33%;
+			}
+			span{
+				color:#5FAD47;
+			}
+		}
+		&:nth-child(4){
+			span{
+				color:#FF9226;
+			}
+		}
+		&:nth-child(6){
+			span{
+				color:#75D658;
+			}
+		}
+		&:nth-child(8){
+			span{
+				color:#57A1F7;
+			}
+		}
+		&:nth-child(10){
+			span{
+				color:#FFBA00;
+			}
+		}
+		&:nth-child(12){
+			span{
+				color:#DBA848;
+			}
+		}
+		&:nth-child(14){
+			span{
+				color:#FF868F;
+			}
+		}
+	}
+	input[name="tabBox--typeAttractive__button"] {
+		display: none;
+	}
+	&__content{
+	  	clear: both;
+		width:100%;
+		max-width: unset;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:start;
+		margin-top:8em;
+		@include s.media(m){
+			margin-top:8em;
+		}
+		>div{
+			background:#F5F5F5;
+			border-radius:0.3em;
+			display:block;
+			width:48%;
+			margin:1%;
+			position:relative;
+			padding:1em 0.5em 4em 0.7em;
+			@include s.media(m){
+				width:19%;
+				margin:0.5%;
+				padding:1em 0.5em 4em 0.7em;
+			}
+			p{
+				margin:0;
+				&:nth-child(1){
+					font-size:4em;
+					@include s.fontType02(Regular);
+					position:absolute;
+					right:0.2em;
+					bottom:0.1em;
+					opacity:.3;
+					color:#FFF;
+					line-height:1;
+					@include s.media(m){
+						font-size:5.875em;
+						right:0.2em;
+						bottom:0;
+					}
+				}
+				&:nth-child(2){
+					color:#FFF;
+					font-size:1.3em;
+					font-family: "FOT-筑紫A丸ゴシック Std B";
+					font-weight: 700;
+					font-style: normal;
+					line-height:1.7;
+					@include s.media(m){
+						font-size:1.4em;
+					}
+					@include s.media(xl){
+						font-size:1.4em;
+					}
+				}
+				&:nth-child(3){
+					@include s.fontType01(Regular);
+					text-align:center;
+					min-width:5em;
+					font-size:0.8em;
+					display:inline-block;
+					background:#FFF;
+					padding:0.1em 1em;
+					border-radius:2em;
+					position:absolute;
+					left:1em;
+					bottom:1em;
+				}
+			}
+			&.--category01{
+				background:#FF9226;
+				p:nth-child(3){
+					color:#FF9226;
+				}
+			}
+			&.--category02{
+				background:#75D658;
+				p:nth-child(3){
+					color:#75D658;
+				}
+			}
+			&.--category03{
+				background:#57A1F7;
+				p:nth-child(3){
+					color:#57A1F7;
+				}
+			}
+			&.--category04{
+				background:#FFBA00;
+				p:nth-child(3){
+					color:#FFBA00;
+				}
+			}
+			&.--category05{
+				background:#DBA848;
+				p:nth-child(3){
+					color:#DBA848;
+				}
+			}
+			&.--category06{
+				background:#FF868F;
+				p:nth-child(3){
+					color:#FF868F;
+				}
+			}
+		}
+	}
+	.tabBox--typeAttractive__content .wp-block-group{
+		transition: .4s;
+		display:none;
+	}
+
+	//選択されているタブのコンテンツのみを表示
+	#tabBox--typeAttractive__label000:checked ~ .tabBox--typeAttractive__content .wp-block-group{
+		display:block;
+		animation-name: tabBox--typeAttractive--fade;
+		animation-duration: 1s;
+	}
+	#tabBox--typeAttractive__label001:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category01{
+		display:block;
+		animation-name: tabBox--typeAttractive--fade;
+		animation-duration: 1s;
+	}
+	#tabBox--typeAttractive__label002:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category02{
+		display:block;
+		animation-name: tabBox--typeAttractive--fade;
+		animation-duration: 1s;
+	}
+	#tabBox--typeAttractive__label003:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category03{
+		display:block;
+		animation-name: tabBox--typeAttractive--fade;
+		animation-duration: 1s;
+	}
+	#tabBox--typeAttractive__label004:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category04{
+		display:block;
+		animation-name: tabBox--typeAttractive--fade;
+		animation-duration: 1s;
+	}
+	#tabBox--typeAttractive__label005:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category05{
+		display:block;
+		animation-name: tabBox--typeAttractive--fade;
+		animation-duration: 1s;
+	}
+	#tabBox--typeAttractive__label006:checked ~ .tabBox--typeAttractive__content .wp-block-group.--category06{
+		display:block;
+		animation-name: tabBox--typeAttractive--fade;
+		animation-duration: 1s;
+	}
+	//選択されているタブのスタイルを変える
+	input:checked + .tabBox--typeAttractive__button {
+		pointer-events:none;
+	}
+	input#tabBox--typeAttractive__label000:checked + .tabBox--typeAttractive__button {
+		span{
+			border:#5FAD47 solid 1px;
+		}
+	}
+	input#tabBox--typeAttractive__label001:checked + .tabBox--typeAttractive__button {
+		span{
+			border:#FF9226 solid 1px;
+		}
+	}
+	input#tabBox--typeAttractive__label002:checked + .tabBox--typeAttractive__button {
+		span{
+			border:#75D658 solid 1px;
+		}
+	}
+	input#tabBox--typeAttractive__label003:checked + .tabBox--typeAttractive__button {
+		span{
+			border:#57A1F7 solid 1px;
+		}
+	}
+	input#tabBox--typeAttractive__label004:checked + .tabBox--typeAttractive__button {
+		span{
+			border:#FFBA00 solid 1px;
+		}
+	}
+	input#tabBox--typeAttractive__label005:checked + .tabBox--typeAttractive__button {
+		span{
+			border:#DBA848 solid 1px;
+		}
+	}
+	input#tabBox--typeAttractive__label006:checked + .tabBox--typeAttractive__button {
+		span{
+			border:#FF868F solid 1px;
+		}
+	}
+	input:checked + .tabBox--typeAttractive__button:hover {
+		opacity: 1;
+	}
+	.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+	    margin-left: 1% !important;
+	    margin-right: 1% !important;
+		@include s.media(m){
+			 margin-left: 0.5% !important;
+	   	 	margin-right: 0.5% !important;
+		}
+	}
+}
+
+.wp-admin #wpwrap .tabBox--typeAttractive .tabBox--typeAttractive__content .wp-block-group{
+		display:block;
+}
+
+#container #wrapper .tabBox--typeAttractive input + .tabBox--typeAttractive__button:nth-child(2){
+	margin-left:-16.66% !important;
+	@include s.media(m){
+		margin-left:-8.33% !important;
+	}
+}
+
+@keyframes tabBox--typeAttractive--fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
