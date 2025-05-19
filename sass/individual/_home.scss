@@ -1,1680 +1,1713 @@
 @use "../_setting" as s;
 
-#wrapper .mainVisual{
-	display:block;
-	position:relative;
-	margin-top:3em;
-	@include s.media(m){
-		margin-top:8em;
-		padding-bottom:4em;
-	}
-	img{
-		width:100%;
-	}
-	.inBase{
-		display:flex;
-		flex-wrap:wrap;
-		position:relative;
-		margin-left: 1.8em;
-		@include s.media(m){
-			margin-left: 0;
-			flex-wrap: nowrap;
-		}
-		@include s.media(xl){
-			margin-left: auto;
-			margin-right: auto;
-		}
-	}
-	&__positionBox01{
-		display:block;
-		position:relative;
-		width:44%;
-		margin-left:-9%;
-		z-index:1;
-		margin-top:6em;
-		margin-bottom:1.5em;
-		@include s.media(m){
-			width:30.75em;
-			margin-left:-2.75em;
-			margin-top:2em;
-			margin-bottom:3em;
-		}
-		@include s.media(xl){
-			margin-bottom:0;
-		}
-		h2{
-			display:inline-block;
-			position:absolute;
-			top:-4em;
-			left:2.5em;
-			@include s.media(m){
-				top:0.35em;
-				left:14em;
-			}
-			span{
-				transform:rotate(10deg);
-				display:inline-block;
-				position:relative;
-				font-size:1.4em;
-				font-family: "FOT-筑紫A丸ゴシック Std B";
-				font-weight: 700;
-				font-style: normal;
-				@include s.media(m){
-					font-size:2.875em;
-				}
-				&::before{
-					font-size:1.3em;
-					content:"\0266f";
-					display:inline-block;
-					position:absolute;
-					top:-0.5em;
-					left:-1.1em;
-					@include s.media(m){
-						font-size:1.1em;
-					}
-				}
-				img{
-					width:4.5em;
-					@include s.media(m){
-						width:4em;
-					}
-				}
-			}
-		}
-		h3{
-			font-size:0.8em;
-			@include s.fontType01(Medium);
-			display:inline-block;
-			position:absolute;
-			top:-2.6em;
-			left:1.8em;
-			transform:rotate(10deg);
-			line-height:1.4;
-			@include s.media(m){
-				font-size:1.25em;
-				top:3em;
-				left:8.5em;
-				transform:rotate(5deg);
-			}
-			br{
-				@include s.media(m){
-					display:none;
-				}
-			}
-		}
-		p,.mainVisual__copy{
-			display:inline-block;
-			position:absolute;
-			top:1em;
-			left:1em;
-			text-align:right;
-			line-height:1em;
-			@include s.media(m){
-				top:6em;
-				left:5em;
-			}
-			figure{
-				width:6.5em;
-				transform:rotate(-15deg);
-				@include s.media(m){
-					width:10em;
-					transform:rotate(5deg);
-				}
-				img{
-					width:100%;
-				}
-			}
-			span{
-				font-size:0.7em;
-				@include s.fontType05(Regular);
-				display:inline-block;
-				color:#FFF;
-				background:#FC7E00;
-				padding:0.5em 1em 0.5em 0.5em;
-				letter-spacing:0;
-				transform:rotate(-15deg);
-				line-height:1em;
-				position:relative;
-				z-index:1;
-				@include s.media(m){
-					font-size:1em;
-					padding:0.2em 1em 0.2em 0.5em;
-					line-height:1.7em;
-					transform:rotate(5deg);
-				}
-				&:nth-child(1){
-					margin-right:1em;
-				}
-				&:nth-child(3)::before{
-					content:"";
-					width:100%;
-					height:0.5em;
-					z-index:-1;
-					background:#FC7E00;
-					position:absolute;
-					top:-0.5em;
-					left:0;
-					@include s.media(m){
-						content:none;
-					}
-				}
-			}
-		}
-	}
-	&__positionBox02{
-		display:block;
-		width:68%;
-		position:relative;
-		margin-left:-22%;
-		@include s.media(m){
-			width:41em;
-			margin-left:-7em;
-		}
-		h2{
-			display:inline-block;
-			position:absolute;
-			top:-2.2em;
-			left:6em;
-			@include s.media(m){
-				top:2.7em;
-				left:18em;
-			}
-			span{
-				font-size:1.4em;
-				transform:rotate(-8deg);
-				display:inline-block;
-				position:relative;
-				font-family: "FOT-筑紫A丸ゴシック Std B";
-				font-weight: 700;
-				font-style: normal;
-				@include s.media(m){
-					font-size:2.875em;
-				}
-				&::before{
-					font-size:1.3em;
-					content:"\0266f";
-					display:inline-block;
-					position:absolute;
-					top:-0.6em;
-					left:-1.1em;
-					@include s.media(m){
-						font-size:1.1em;
-					}
-				}
-				img{
-					width:4.5em;
-					@include s.media(m){
-						width:4em;
-					}
-				}
-			}
-		}
-		h3{
-			font-size:0.8em;
-			@include s.fontType01(Medium);
-			display:inline-block;
-			position:absolute;
-			top:-0.3em;
-			left:6em;
-			transform:rotate(-8deg);
-			@include s.media(m){
-				top:5em;
-				left:13em;
-				font-size:1.25em;
-			}
-		}
-		p,.mainVisual__copy{
-			display:inline-block;
-			position:absolute;
-			top:1em;
-			left:8em;
-			text-align:right;
-			line-height:1;
-			@include s.media(m){
-				top:9em;
-				left:17em;
-			}
-			figure{
-				width:6.5em;
-				transform:rotate(-8deg);
-				@include s.media(m){
-					width:11em;
-				}
-				img{
-					width:100%;
-				}
-			}
-			br{
-				height:0;
-			}
-			span{
-				font-size:0.7em;
-				@include s.fontType05(Regular);
-				display:inline-block;
-				color:#FFF;
-				background:#FC7E00;
-				padding:0.7em 1em 0.7em 0.5em;
-				letter-spacing:0;
-				transform:rotate(-8deg);
-				line-height:1em;
-				position:relative;
-				@include s.media(m){
-					font-size:1em;
-					line-height:2;
-					padding:0.2em 1.5em 0.2em 0.5em;
-				}
-				&:nth-child(1){
-					margin-right:2em;
-				}
-				&:nth-child(3){
-					margin-top:-1em;
-					@include s.media(m){
-						margin-top:-0.4em;
-					}
-				}
-				&:nth-child(3)::before{
-					content:"";
-					width:100%;
-					height:0.5em;
-					z-index:-1;
-					background:#FC7E00;
-					position:absolute;
-					top:-0.5em;
-					left:0;
-					@include s.media(m){
-						content:none;
-					}
-				}
-			}
-		}
-	}
-	&__positionBox03{
-		display:block;
-		width:42%;
-		position:relative;
-		margin-left:-25%;
-		margin-top:6.5em;
-		@include s.media(m){
-			width:28em;
-			margin-left:-5em;
-			margin-top:0;
-		}
-		figure{
-			img{
-				width:140%;
-				max-width:unset;
-				@include s.media(m){
-					width:100%;
-				}
-			}
-		}
-		h2{
-			display:inline-block;
-			position:absolute;
-			top:15em;
-			left:-1em;
-			@include s.media(m){
-				top:24em;
-				left:8em;
-			}
-			span{
-				font-size:1.3em;
-				transform:rotate(8deg);
-				display:inline-block;
-				position:relative;
-				font-family: "FOT-筑紫A丸ゴシック Std B";
-				font-weight: 700;
-				font-style: normal;
-				@include s.media(m){
-					font-size:1.7em;
-					transform:rotate(-8deg);
-				}
-				&::before{
-					font-size:1.3em;
-					content:"\0266f";
-					display:inline-block;
-					position:absolute;
-					top:-0.6em;
-					left:-1.1em;
-					@include s.media(m){
-						top:-0.6em;
-						font-size:1.7em;
-					}
-				}
-				img{
-					width:9em;
-				}
-			}
-		}
-		h3{
-			font-size:0.8em;
-			@include s.fontType01(Medium);
-			display:inline-block;
-			position:absolute;
-			top:21.5em;
-			left:7em;
-			transform:rotate(8deg);
-			@include s.media(m){
-				font-size:1em;
-				top:27em;
-				left:8.5em;
-				transform:rotate(-8deg);
-			}
-		}
-		p,.mainVisual__copy{
-			display:inline-block;
-			position:absolute;
-			top:8.8em;
-			left:2em;
-			text-align:right;
-			line-height:0.8;
-			@include s.media(m){
-				top:17em;
-				left:4em;
-				line-height:1.7;
-			}
-			figure{
-				width:8em;
-				transform:rotate(-8deg);
-				@include s.media(m){
-					width:10.1em;
-				}
-				img{
-					width:100%;
-				}
-			}
-			span{
-				font-size:0.7em;
-				@include s.fontType05(Regular);
-				display:inline-block;
-				color:#FFF;
-				background:#FC7E00;
-				padding:0.9em 1.5em 0.9em 0.5em;
-				letter-spacing:0;
-				transform:rotate(-8deg);
-				@include s.media(m){
-					font-size:1em;
-					padding:0 1.5em 0 0.5em;
-					line-height:2.6;
-				}
-				&:nth-child(1){
-					margin-right:2em;
-					padding-right:2em;
-				}
-				&:nth-child(3){
-					margin-top:-0.6em;
-				}
-			}
-		}
-	}
-	&__chachcopy{
-		display:inline-block;
-		position:absolute;
-		top:-4.3em;
-		left:50%;
-		z-index:1;
-		margin-left:6.2em;
-		@include s.media(m){
-			top:11em;
-			left:52%;
-			margin-left:4em;
-		}
-		h2{
-			display:inline-block;
-			font-size:1.15em;
-			@include s.fontType01(Medium);
-			-ms-writing-mode: tb-rl;
-			writing-mode: vertical-rl;
-			text-orientation: upright; /* すべて縦方向に表示 */
-			letter-spacing:0.1em;
-			line-height:1.5em;
-			@include s.media(m){
-				font-size:2.1em;
-				line-height:2em;
-			}
-		}
-	}
-	&__summaryBox{
-		width:100%;																																	
-		display:flex;
-		justify-content:center;
-		flex-wrap:wrap;
-		margin-top:6em;
-		@include s.media(m){
-			display:block;
-			width:23.75em;
-			position:absolute;
-			bottom:3em;
-			left:12em;
-			z-index:1;
-			margin-top:0;
-		}
-		li{
-			display:block;
-			width:47%;
-			margin:0 1.5% 1em;
-			@include s.media(m){
-				width:100%;
-				margin:0 0 0.5em 0;
-			}
-			a{
-				display:block;
-				background:#FFF;
-				border-radius:0.5em;
-				padding:0.5em 1em;
-				border:s.$colorType02 solid 1px;
-				box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
-				@include s.media(m){
-					border:none;
-					padding:0.5em 2em;
-				}
-				span{
-					display:block;
-					&:nth-child(1){
-						font-size:1.3em;
-						@include s.fontType01(Light);
-						@include s.media(m){
-							font-size:1.5em;
-						}
-					}
-					&:nth-child(2){
-						font-size:1.125em;
-						color:s.$colorType02;
-						@include s.fontType01(Regular);
-					}
-				}
-				&:hover{
-					background:s.$colorType03;
-					color:#3E3E3E;
-				}
-			}
-		}
-	}
-	&__bottomBG{
-		width:70%;
-		position:absolute;
-		right:0;
-		bottom:10.5em;
-		z-index:-1;
-		@include s.media(m){
-			width:53.75em;
-			bottom:-5em;
-		}
-		img{
-			width:100%;
-		}
-		@include s.media(m){
-			right:-12em;
-		}
-		@include s.media(xl){
-			right:0;
-		}
-	}
-	&__contactButton{
-		width:17.5em;
-		display:none;
-		position:absolute;
-		bottom:8em;
-		right:0;
-		@include s.media(m){
-			bottom:4em;
-			display:block;
-		}
-		@include s.media(xl){
-			bottom:8em;
-		}
-		a{
-			display:block;
-			background: url(../img/home/bgContactButton.jpg) repeat center top;
-			background-size:100% auto;
-			text-decoration:none;
-			color:#FFF;
-			padding:0.5em 0 0.5em 1.5em;
-			font-size:1.5em;
-			position:relative;
-			line-height:1.4;
-			border-radius:0.5em 0 0 0.5em;
-			opacity:1;
-			&::before{
-				font-size:1.1em;
-				content:"\025b8";
-				display:inline-block;
-				position:absolute;
-				top:50%;;
-				left:0.5em;
-				margin-top:-0.5em;
-			}
-			&:hover{
-				opacity:.5;
-			}
-		}
-	}
+#wrapper .mainVisual {
+  display: block;
+  position: relative;
+  margin-top: 3em;
+  @include s.media(m) {
+    margin-top: 8em;
+    padding-bottom: 4em;
+  }
+  img {
+    width: 100%;
+  }
+  .inBase {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: 1.8em;
+    @include s.media(m) {
+      margin-left: 0;
+      flex-wrap: nowrap;
+    }
+    @include s.media(xl) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__positionBox01 {
+    display: block;
+    position: relative;
+    width: 44%;
+    margin-left: -9%;
+    z-index: 1;
+    margin-top: 6em;
+    margin-bottom: 1.5em;
+    @include s.media(m) {
+      width: 30.75em;
+      margin-left: -2.75em;
+      margin-top: 2em;
+      margin-bottom: 3em;
+    }
+    @include s.media(xl) {
+      margin-bottom: 0;
+    }
+    h2 {
+      display: inline-block;
+      position: absolute;
+      top: -4em;
+      left: 2.5em;
+      @include s.media(m) {
+        top: 0.35em;
+        left: 14em;
+      }
+      span {
+        transform: rotate(10deg);
+        display: inline-block;
+        position: relative;
+        font-size: 1.4em;
+        font-family: "FOT-筑紫A丸ゴシック Std B";
+        font-weight: 700;
+        font-style: normal;
+        @include s.media(m) {
+          font-size: 2.875em;
+        }
+        &::before {
+          font-size: 1.3em;
+          content: "\0266f";
+          display: inline-block;
+          position: absolute;
+          top: -0.5em;
+          left: -1.1em;
+          @include s.media(m) {
+            font-size: 1.1em;
+          }
+        }
+        img {
+          width: 4.5em;
+          @include s.media(m) {
+            width: 4em;
+          }
+        }
+      }
+    }
+    h3 {
+      font-size: 0.8em;
+      @include s.fontType01(Medium);
+      display: inline-block;
+      position: absolute;
+      top: -2.6em;
+      left: 1.8em;
+      transform: rotate(10deg);
+      line-height: 1.4;
+      @include s.media(m) {
+        font-size: 1.25em;
+        top: 3em;
+        left: 8.5em;
+        transform: rotate(5deg);
+      }
+      br {
+        @include s.media(m) {
+          display: none;
+        }
+      }
+    }
+    p,
+    .mainVisual__copy {
+      display: inline-block;
+      position: absolute;
+      top: 1em;
+      left: 1em;
+      text-align: right;
+      line-height: 1em;
+      @include s.media(m) {
+        top: 6em;
+        left: 5em;
+      }
+      figure {
+        width: 6.5em;
+        transform: rotate(-15deg);
+        @include s.media(m) {
+          width: 10em;
+          transform: rotate(5deg);
+        }
+        img {
+          width: 100%;
+        }
+      }
+      span {
+        font-size: 0.7em;
+        @include s.fontType05(Regular);
+        display: inline-block;
+        color: #fff;
+        background: #fc7e00;
+        padding: 0.5em 1em 0.5em 0.5em;
+        letter-spacing: 0;
+        transform: rotate(-15deg);
+        line-height: 1em;
+        position: relative;
+        z-index: 1;
+        @include s.media(m) {
+          font-size: 1em;
+          padding: 0.2em 1em 0.2em 0.5em;
+          line-height: 1.7em;
+          transform: rotate(5deg);
+        }
+        &:nth-child(1) {
+          margin-right: 1em;
+        }
+        &:nth-child(3)::before {
+          content: "";
+          width: 100%;
+          height: 0.5em;
+          z-index: -1;
+          background: #fc7e00;
+          position: absolute;
+          top: -0.5em;
+          left: 0;
+          @include s.media(m) {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+  &__positionBox02 {
+    display: block;
+    width: 68%;
+    position: relative;
+    margin-left: -22%;
+    @include s.media(m) {
+      width: 41em;
+      margin-left: -7em;
+    }
+    h2 {
+      display: inline-block;
+      position: absolute;
+      top: -2.2em;
+      left: 6em;
+      @include s.media(m) {
+        top: 2.7em;
+        left: 18em;
+      }
+      span {
+        font-size: 1.4em;
+        transform: rotate(-8deg);
+        display: inline-block;
+        position: relative;
+        font-family: "FOT-筑紫A丸ゴシック Std B";
+        font-weight: 700;
+        font-style: normal;
+        @include s.media(m) {
+          font-size: 2.875em;
+        }
+        &::before {
+          font-size: 1.3em;
+          content: "\0266f";
+          display: inline-block;
+          position: absolute;
+          top: -0.6em;
+          left: -1.1em;
+          @include s.media(m) {
+            font-size: 1.1em;
+          }
+        }
+        img {
+          width: 4.5em;
+          @include s.media(m) {
+            width: 4em;
+          }
+        }
+      }
+    }
+    h3 {
+      font-size: 0.8em;
+      @include s.fontType01(Medium);
+      display: inline-block;
+      position: absolute;
+      top: -0.3em;
+      left: 6em;
+      transform: rotate(-8deg);
+      @include s.media(m) {
+        top: 5em;
+        left: 13em;
+        font-size: 1.25em;
+      }
+    }
+    p,
+    .mainVisual__copy {
+      display: inline-block;
+      position: absolute;
+      top: 1em;
+      left: 8em;
+      text-align: right;
+      line-height: 1;
+      @include s.media(m) {
+        top: 9em;
+        left: 17em;
+      }
+      figure {
+        width: 6.5em;
+        transform: rotate(-8deg);
+        @include s.media(m) {
+          width: 11em;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      br {
+        height: 0;
+      }
+      span {
+        font-size: 0.7em;
+        @include s.fontType05(Regular);
+        display: inline-block;
+        color: #fff;
+        background: #fc7e00;
+        padding: 0.7em 1em 0.7em 0.5em;
+        letter-spacing: 0;
+        transform: rotate(-8deg);
+        line-height: 1em;
+        position: relative;
+        @include s.media(m) {
+          font-size: 1em;
+          line-height: 2;
+          padding: 0.2em 1.5em 0.2em 0.5em;
+        }
+        &:nth-child(1) {
+          margin-right: 2em;
+        }
+        &:nth-child(3) {
+          margin-top: -1em;
+          @include s.media(m) {
+            margin-top: -0.4em;
+          }
+        }
+        &:nth-child(3)::before {
+          content: "";
+          width: 100%;
+          height: 0.5em;
+          z-index: -1;
+          background: #fc7e00;
+          position: absolute;
+          top: -0.5em;
+          left: 0;
+          @include s.media(m) {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+  &__positionBox03 {
+    display: block;
+    width: 42%;
+    position: relative;
+    margin-left: -25%;
+    margin-top: 6.5em;
+    @include s.media(m) {
+      width: 28em;
+      margin-left: -5em;
+      margin-top: 0;
+    }
+    figure {
+      img {
+        width: 140%;
+        max-width: unset;
+        @include s.media(m) {
+          width: 100%;
+        }
+      }
+    }
+    h2 {
+      display: inline-block;
+      position: absolute;
+      top: 15em;
+      left: -1em;
+      @include s.media(m) {
+        top: 24em;
+        left: 8em;
+      }
+      span {
+        font-size: 1.3em;
+        transform: rotate(8deg);
+        display: inline-block;
+        position: relative;
+        font-family: "FOT-筑紫A丸ゴシック Std B";
+        font-weight: 700;
+        font-style: normal;
+        @include s.media(m) {
+          font-size: 1.7em;
+          transform: rotate(-8deg);
+        }
+        &::before {
+          font-size: 1.3em;
+          content: "\0266f";
+          display: inline-block;
+          position: absolute;
+          top: -0.6em;
+          left: -1.1em;
+          @include s.media(m) {
+            top: -0.6em;
+            font-size: 1.7em;
+          }
+        }
+        img {
+          width: 9em;
+        }
+      }
+    }
+    h3 {
+      font-size: 0.8em;
+      @include s.fontType01(Medium);
+      display: inline-block;
+      position: absolute;
+      top: 21.5em;
+      left: 7em;
+      transform: rotate(8deg);
+      @include s.media(m) {
+        font-size: 1em;
+        top: 27em;
+        left: 8.5em;
+        transform: rotate(-8deg);
+      }
+    }
+    p,
+    .mainVisual__copy {
+      display: inline-block;
+      position: absolute;
+      top: 8.8em;
+      left: 2em;
+      text-align: right;
+      line-height: 0.8;
+      @include s.media(m) {
+        top: 17em;
+        left: 4em;
+        line-height: 1.7;
+      }
+      figure {
+        width: 8em;
+        transform: rotate(-8deg);
+        @include s.media(m) {
+          width: 10.1em;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      span {
+        font-size: 0.7em;
+        @include s.fontType05(Regular);
+        display: inline-block;
+        color: #fff;
+        background: #fc7e00;
+        padding: 0.9em 1.5em 0.9em 0.5em;
+        letter-spacing: 0;
+        transform: rotate(-8deg);
+        @include s.media(m) {
+          font-size: 1em;
+          padding: 0 1.5em 0 0.5em;
+          line-height: 2.6;
+        }
+        &:nth-child(1) {
+          margin-right: 2em;
+          padding-right: 2em;
+        }
+        &:nth-child(3) {
+          margin-top: -0.6em;
+        }
+      }
+    }
+  }
+  &__chachcopy {
+    display: inline-block;
+    position: absolute;
+    top: -4.3em;
+    left: 50%;
+    z-index: 1;
+    margin-left: 6.2em;
+    @include s.media(m) {
+      top: 11em;
+      left: 52%;
+      margin-left: 4em;
+    }
+    h2 {
+      display: inline-block;
+      font-size: 1.15em;
+      @include s.fontType01(Medium);
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      text-orientation: upright; /* すべて縦方向に表示 */
+      letter-spacing: 0.1em;
+      line-height: 1.5em;
+      @include s.media(m) {
+        font-size: 2.1em;
+        line-height: 2em;
+      }
+    }
+  }
+  &__summaryBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    @include s.media(m) {
+      display: block;
+      width: 23.75em;
+      position: absolute;
+      bottom: 3em;
+      left: 12em;
+      z-index: 1;
+      margin-top: 0;
+    }
+    li {
+      display: block;
+      width: 47%;
+      margin: 0 1.5% 1em;
+      @include s.media(m) {
+        width: 100%;
+        margin: 0 0 0.5em 0;
+      }
+      &:nth-child(3) {
+        width: 100%;
+        display: block;
+        @include s.media(m) {
+          display: none;
+        }
+        > div {
+          display: block;
+          width: 118%;
+          margin-left: -9%;
+          @include s.media(m) {
+            display: none;
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+      a {
+        display: block;
+        background: #fff;
+        border-radius: 0.5em;
+        padding: 0.5em 1em;
+        border: s.$colorType02 solid 1px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+        @include s.media(m) {
+          border: none;
+          padding: 0.5em 2em;
+        }
+        span {
+          display: block;
+          &:nth-child(1) {
+            font-size: 1.3em;
+            @include s.fontType01(Light);
+            @include s.media(m) {
+              font-size: 1.5em;
+            }
+          }
+          &:nth-child(2) {
+            font-size: 1.125em;
+            color: s.$colorType02;
+            @include s.fontType01(Regular);
+          }
+        }
+        &:hover {
+          background: s.$colorType03;
+          color: #3e3e3e;
+        }
+      }
+    }
+  }
+  &__bottomBG {
+    width: 70%;
+    position: absolute;
+    right: 0;
+    bottom: 10.5em;
+    z-index: -1;
+    @include s.media(m) {
+      width: 53.75em;
+      bottom: -5em;
+    }
+    img {
+      width: 100%;
+    }
+    @include s.media(m) {
+      right: -12em;
+    }
+    @include s.media(xl) {
+      right: 0;
+    }
+  }
+  &__contactButton {
+    width: 17.5em;
+    display: none;
+    position: absolute;
+    bottom: 8em;
+    right: 0;
+    @include s.media(m) {
+      bottom: 4em;
+      display: block;
+    }
+    @include s.media(xl) {
+      bottom: 8em;
+    }
+    a {
+      display: block;
+      background: url(../img/home/bgContactButton.jpg) repeat center top;
+      background-size: 100% auto;
+      text-decoration: none;
+      color: #fff;
+      padding: 0.5em 0 0.5em 1.5em;
+      font-size: 1.5em;
+      position: relative;
+      line-height: 1.4;
+      border-radius: 0.5em 0 0 0.5em;
+      opacity: 1;
+      &::before {
+        font-size: 1.1em;
+        content: "\025b8";
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0.5em;
+        margin-top: -0.5em;
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
 }
 
-#wrapper .homeAboutBox{
-	background: rgb(255,255,255);
-	background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
-	margin-bottom:9em;
-	.inBase{
-		position:relative;
-		&::before{
-			content:"";
-			width:11em;
-			height:11em;
-			display:block;
-			background:#FDF2E8;
-			position:absolute;
-			top:8em;
-			left:-20em;
-			border-radius:50%;
-			mix-blend-mode: multiply;
-		}
-		&::after{
-			content:"";
-			width:15.6em;
-			height:15.6em;
-			display:block;
-			border:#FDEBDB solid 1.25em;
-			position:absolute;
-			top:2em;
-			right:-23em;
-			border-radius:50%;
-			mix-blend-mode: multiply;
-		}
-	}
-	&__title{
-		display:block;
-		text-align:center;
-		margin-bottom:2em;
-		h3{
-			&:nth-child(1){
-				@include s.fontType03(Regular);
-				color:#6F4515;
-				opacity:.1;
-				font-size:4em;
-				line-height:1;
-				@include s.media(m){
-					font-size:5em;
-				}
-			}
-			&:nth-child(2){
-				@include s.fontType01(Bold);
-				color:s.$colorType02;
-				font-size:1.125em;
-				margin-top:-0.5em;
-				letter-spacing:0.1em;
-				@include s.media(m){
-					font-size:1.5em;
-				}
-			}
-		}
-	}
-	&__lead{
-		text-align:center;
-		font-family: "FOT-筑紫A丸ゴシック Std B";
-		font-weight: 700;
-		font-style: normal;
-		color:#3E3E3E;
-		margin-bottom:1em;
-		line-height:1.7em;
-		letter-spacing:0.1em;
-		font-size:1.125em;
-		@include s.media(m){
-			font-size:1.75em;
-		}
-	}
-	&__sentence{
-		text-align:center;
-		@include s.fontType01(Regular);
-		margin-bottom:3em;
-		line-height:2em;
-	}
-	&__buttonBox{
-		width:100%;
-		display:block;
-		margin-bottom:3em;
-		position:relaitve;
-		z-index:1;
-		@include s.media(m){
-			display:flex;
-			justify-content:center;
-		}
-		.button--type01{
-			padding:0 0.5em;
-			text-align:center;
-			margin-bottom:1em;
-			a{
-				border:#FFF solid 2px;
-				box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
-				min-width:90%;
-				@include s.media(m){
-					min-width:18em;
-				}
-			}
-		}
-	}
-	&__image{
-		display:block;
-		@include s.media(m){
-			display:block;
-		}
-		figure{
-			img{
-				width:100%;
-			}
-			&:nth-child(1){
-				width:7.4em;
-				height:7.4em;
-				display: block;
-				position:absolute;
-				top:2em;
-				left:-3em;
-				border-radius:50%;
-				overflow:hidden;
-				@include s.media(m){
-					width:15.4em;
-					height:15.4em;
-					top:0;
-					left:5em;
-				}
-			}
-			&:nth-child(2){
-				width:7.75em;
-				height:7.75em;
-				display: block;
-				position:absolute;
-				top:-3em;
-				right:-3em;
-				border-radius:50%;
-				overflow:hidden;
-				@include s.media(m){
-					width:11.2em;
-					height:11.2em;
-					top:-3em;
-					right:10em;
-				}
-			}
-			&:nth-child(3){
-				width:7.4em;
-				height:7.4em;
-				display: block;
-				position:absolute;
-				bottom:-6em;
-				left:-2em;
-				border-radius:50%;
-				overflow:hidden;
-				z-index:-1;
-				@include s.media(m){
-					width:11.2em;
-					height:11.2em;
-					bottom:9em;
-					left:-3em;
-					z-index:1;
-				}
-			}
-			&:nth-child(4){
-				width:9.6em;
-				height:9.6em;
-				display: block;
-				position:absolute;
-				bottom:-7em;
-				right:-2em;
-				border-radius:50%;
-				overflow:hidden;
-				z-index:-1;
-				@include s.media(m){
-					width:18.4em;
-					height:18.4em;
-					bottom:8em;
-					right:-1em;
-					z-index:1;
-				}
-			}
-		}
-	}
+#wrapper .homeAboutBox {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  margin-bottom: 9em;
+  .inBase {
+    position: relative;
+    &::before {
+      content: "";
+      width: 11em;
+      height: 11em;
+      display: block;
+      background: #fdf2e8;
+      position: absolute;
+      top: 8em;
+      left: -20em;
+      border-radius: 50%;
+      mix-blend-mode: multiply;
+    }
+    &::after {
+      content: "";
+      width: 15.6em;
+      height: 15.6em;
+      display: block;
+      border: #fdebdb solid 1.25em;
+      position: absolute;
+      top: 2em;
+      right: -23em;
+      border-radius: 50%;
+      mix-blend-mode: multiply;
+    }
+  }
+  &__title {
+    display: block;
+    text-align: center;
+    margin-bottom: 2em;
+    h3 {
+      &:nth-child(1) {
+        @include s.fontType03(Regular);
+        color: #6f4515;
+        opacity: 0.1;
+        font-size: 4em;
+        line-height: 1;
+        @include s.media(m) {
+          font-size: 5em;
+        }
+      }
+      &:nth-child(2) {
+        @include s.fontType01(Bold);
+        color: s.$colorType02;
+        font-size: 1.125em;
+        margin-top: -0.5em;
+        letter-spacing: 0.1em;
+        @include s.media(m) {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+  &__lead {
+    text-align: center;
+    font-family: "FOT-筑紫A丸ゴシック Std B";
+    font-weight: 700;
+    font-style: normal;
+    color: #3e3e3e;
+    margin-bottom: 1em;
+    line-height: 1.7em;
+    letter-spacing: 0.1em;
+    font-size: 1.125em;
+    @include s.media(m) {
+      font-size: 1.75em;
+    }
+  }
+  &__sentence {
+    text-align: center;
+    @include s.fontType01(Regular);
+    margin-bottom: 3em;
+    line-height: 2em;
+  }
+  &__buttonBox {
+    width: 100%;
+    display: block;
+    margin-bottom: 3em;
+    position: relaitve;
+    z-index: 1;
+    @include s.media(m) {
+      display: flex;
+      justify-content: center;
+    }
+    .button--type01 {
+      padding: 0 0.5em;
+      text-align: center;
+      margin-bottom: 1em;
+      a {
+        border: #fff solid 2px;
+        box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
+        min-width: 90%;
+        @include s.media(m) {
+          min-width: 18em;
+        }
+      }
+    }
+  }
+  &__image {
+    display: block;
+    @include s.media(m) {
+      display: block;
+    }
+    figure {
+      img {
+        width: 100%;
+      }
+      &:nth-child(1) {
+        width: 7.4em;
+        height: 7.4em;
+        display: block;
+        position: absolute;
+        top: 2em;
+        left: -3em;
+        border-radius: 50%;
+        overflow: hidden;
+        @include s.media(m) {
+          width: 15.4em;
+          height: 15.4em;
+          top: 0;
+          left: 5em;
+        }
+      }
+      &:nth-child(2) {
+        width: 7.75em;
+        height: 7.75em;
+        display: block;
+        position: absolute;
+        top: -3em;
+        right: -3em;
+        border-radius: 50%;
+        overflow: hidden;
+        @include s.media(m) {
+          width: 11.2em;
+          height: 11.2em;
+          top: -3em;
+          right: 10em;
+        }
+      }
+      &:nth-child(3) {
+        width: 7.4em;
+        height: 7.4em;
+        display: block;
+        position: absolute;
+        bottom: -6em;
+        left: -2em;
+        border-radius: 50%;
+        overflow: hidden;
+        z-index: -1;
+        @include s.media(m) {
+          width: 11.2em;
+          height: 11.2em;
+          bottom: 9em;
+          left: -3em;
+          z-index: 1;
+        }
+      }
+      &:nth-child(4) {
+        width: 9.6em;
+        height: 9.6em;
+        display: block;
+        position: absolute;
+        bottom: -7em;
+        right: -2em;
+        border-radius: 50%;
+        overflow: hidden;
+        z-index: -1;
+        @include s.media(m) {
+          width: 18.4em;
+          height: 18.4em;
+          bottom: 8em;
+          right: -1em;
+          z-index: 1;
+        }
+      }
+    }
+  }
 }
 
-#wrapper .homeBenefitBox{
-	margin-bottom:5em;
-	&__image{
-		width:120%;
-		margin-left:-10%;
-		display:flex;
-		position:relative;
-		@include s.media(m){
-			width:150%;
-			margin-left:-25%;
-		}
-		figure{
-			width:33.3%;
-			padding:0 0.1em;
-		}
-		img{
-			width:100%;
-		}
-		&::after{
-			@include s.media(m){
-				content:"";
-				width:15.6em;
-				height:15.6em;
-				display:block;
-				border:#FDEBDB solid 1.25em;
-				position:absolute;
-				bottom:-9em;
-				left:-8em;
-				border-radius:50%;
-				mix-blend-mode: multiply;
-			}
-		}
-	}
-	&__inner{
-		position:relative;
-		z-index:1;
-		@include s.media(m){
-			margin-top:-8em;
-		}
-		&::before{
-			content:"";
-			width:50%;
-			height:100%;
-			display:block;
-			background:#FFF;
-			position:absolute;
-			top:0;
-			left:0;
-		}
-		&::after{
-			@include s.media(m){
-				content:"";
-				width:15.6em;
-				height:15.6em;
-				display:block;
-				border:#F8DFC9 solid 1.25em;
-				position:absolute;
-				bottom:-8em;
-				left:-5em;
-				border-radius:50%;
-				mix-blend-mode: multiply;
-				z-index:-1;
-			}
-		}
-		.inBase__inner{
-			background:#FFF;
-			position:relative;
-			z-index:1;
-			padding-bottom:0;
-			@include s.media(m){
-				padding-bottom:2em;
-			}
-			&::before{
-				content:"";
-				width:11em;
-				height:11em;
-				display:block;
-				background:#FBDEC3;
-				position:absolute;
-				top:28em;
-				right:-20em;
-				border-radius:50%;
-			}
-			&::after{
-				content:"";
-				width:15.6em;
-				height:15.6em;
-				display:block;
-				border:#FBD6B8 solid 1.25em;
-				position:absolute;
-				top:18em;
-				right:-30em;
-				border-radius:50%;
-				mix-blend-mode: multiply;
-			}
-		}
-	}
-	&__background{
-		width:50%;
-		display:block;
-		position:absolute;
-		top:4em;
-		right:0;
-		z-index:-1;
-		@include s.media(m){
-			width:40em;
-			top:0;
-			right:0;
-		}
-		img{
-			width:100%;
-		}
-	}
-	&__chath{
-		@include s.fontType03(Regular);
-		color:#6F4515;
-		opacity:.2;
-		font-size:1.5em;
-		line-height:1;
-		display:block;
-		text-align:right;
-		margin:0 0.5em 1em;
-		padding-top:3.5em;
-		@include s.media(m){
-			font-size:4em;
-			margin:0 0.5em 1em;
-			padding-top:0.3em;
-			opacity:.1;
-		}
-	}
-	&__headBox{
-		display:block;
-		margin-bottom:3em;
-		padding-left:1em;
-		@include s.media(m){
-			padding-left:13em;
-		}
-	}
-	&__title{
-		font-size:1.875em;
-		@include s.fontType01(Light);
-		margin-bottom:1em;
-		line-height:1.4;
-	}
-	&__lead{
-		width:90%;
-		position:absolute;
-		top:-1em;
-		left:5%;
-		text-align:center;
-		@include s.media(m){
-			width:auto;
-			position:absolute;
-			top:0;
-			left:0;
-			text-align:unset;
-		}
-		h4{
-			font-size:0.8em;
-			font-family: "FOT-筑紫A丸ゴシック Std B";
-			//@include s.fontType01(Regular);
-			//font-weight: 700;
-			font-style: normal;
-			background:s.$colorType04;
-			color:#6F4515;
-			padding:0.7em 0.5em;
-			letter-spacing:0.1em;
-			line-height:2em;
-			display:block;
-			line-height:1.4;
-			@include s.media(m){
-				font-size:1.25em;
-				-ms-writing-mode: tb-rl;
-				writing-mode: vertical-rl;
-				text-orientation: upright;
-				display:inline-block;
-				padding:1.5em 0.5em;
-				line-height:1.7;
-				font-fauture-settings:initial;
-				-webkit-font-feature-settings: "initial";
-			}
-		}
-	}
-	&__sentence{
-		@include s.fontType01(Regular);
-		margin-bottom:1em;
-		padding-right:1em;
-		@include s.media(m){
-			//margin-bottom:0;
-			padding-right:0;
-		}
-	}
-	&__buttonBox{
-		display:block;
-		text-align:center;
-		padding-right:1em;
-		@include s.media(m){
-			text-align:right;
-			//margin-top:-2em;
-			padding-right:25%;
-		}
-		.button--type01{
-			a{
-				border:#FFF solid 2px;
-				box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.1);
-				@include s.media(m){
-					border:unset;
-					box-shadow:unset;
-				}
-			}
-		}
-	}
-	&__contentBox{
-		width:100%;
-		display:flex;
-		justify-content:space-between;
-		flex-wrap:wrap;
-		margin-bottom:4em;
-	}
-	&__contentButton{
-		width:90%;
-		display:block;
-		margin:0 auto 4em;
-		@include s.media(m){
-			width:47%;
-			margin:0;
-		}
-		a{
-			display:block;
-			background: rgb(109,217,95);
-			background: linear-gradient(-45deg, rgba(109,217,95,1) 0%, rgba(203,219,83,1) 30%, rgba(203,219,83,1) 70%, rgba(109,217,95,1) 100%);
-			padding:2em 2em 3.5em;
-			position:relative;
-			opacity:1;
-			@include s.media(m){
-				padding:2em 4em 5em;
-			}
-			&:hover{
-				opacity:.5;
-			}
-		}
-	}
-	&__copy{
-		color:#FFF;
-		@include s.fontType01(Bold);
-		font-size:1.3em;
-		margin-bottom:0.5em;
-		@include s.media(m){
-			font-size:1.5em;
-		}
-	}
-	&__number{
-		@include s.fontType02(Regular);
-		font-size:6em;
-		color:#3E3E3E;
-		position:absolute;
-		top:1.5em;
-		right:0.5em;
-		@include s.media(m){
-			font-size:7.5em;
-			top:1.2em;
-			right:0.8em;
-		}
-	}
-	&__contentTitle{
-		font-family: "FOT-筑紫A丸ゴシック Std B";
-		font-weight: 700;
-		font-style: normal;
-		font-size:1.7em;
-		line-height:1.4;
-		color:#3E3E3E;
-		margin-bottom:1em;
-		@include s.media(m){
-			font-size:1.8em;
-			line-height:1.7;
-		}
-		@include s.media(xl){
-			font-size:1.9em;
-		}
-	}
-	&__contentImage{
-		img{
-			width:100%;
-		}
-	}
-	&__button{
-		display:block;
-		text-align:center;
-		position:absolute;
-		bottom:-2.1em;
-		left:50%;
-		margin-left:-5.5em;
-		@include s.media(m){
-			bottom:-2em;
-			right:4em;
-			left:unset;
-			margin-left:0;
-		}
-		.button--type01{
-			span{
-				border:#FFF solid 2px;
-				box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.1);
-				@include s.media(m){
-					border:unset;
-					box-shadow:unset;
-				}
-			}
-		}
-	}
+#wrapper .homeBenefitBox {
+  margin-bottom: 5em;
+  &__image {
+    width: 120%;
+    margin-left: -10%;
+    display: flex;
+    position: relative;
+    @include s.media(m) {
+      width: 150%;
+      margin-left: -25%;
+    }
+    figure {
+      width: 33.3%;
+      padding: 0 0.1em;
+    }
+    img {
+      width: 100%;
+    }
+    &::after {
+      @include s.media(m) {
+        content: "";
+        width: 15.6em;
+        height: 15.6em;
+        display: block;
+        border: #fdebdb solid 1.25em;
+        position: absolute;
+        bottom: -9em;
+        left: -8em;
+        border-radius: 50%;
+        mix-blend-mode: multiply;
+      }
+    }
+  }
+  &__inner {
+    position: relative;
+    z-index: 1;
+    @include s.media(m) {
+      margin-top: -8em;
+    }
+    &::before {
+      content: "";
+      width: 50%;
+      height: 100%;
+      display: block;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &::after {
+      @include s.media(m) {
+        content: "";
+        width: 15.6em;
+        height: 15.6em;
+        display: block;
+        border: #f8dfc9 solid 1.25em;
+        position: absolute;
+        bottom: -8em;
+        left: -5em;
+        border-radius: 50%;
+        mix-blend-mode: multiply;
+        z-index: -1;
+      }
+    }
+    .inBase__inner {
+      background: #fff;
+      position: relative;
+      z-index: 1;
+      padding-bottom: 0;
+      @include s.media(m) {
+        padding-bottom: 2em;
+      }
+      &::before {
+        content: "";
+        width: 11em;
+        height: 11em;
+        display: block;
+        background: #fbdec3;
+        position: absolute;
+        top: 28em;
+        right: -20em;
+        border-radius: 50%;
+      }
+      &::after {
+        content: "";
+        width: 15.6em;
+        height: 15.6em;
+        display: block;
+        border: #fbd6b8 solid 1.25em;
+        position: absolute;
+        top: 18em;
+        right: -30em;
+        border-radius: 50%;
+        mix-blend-mode: multiply;
+      }
+    }
+  }
+  &__background {
+    width: 50%;
+    display: block;
+    position: absolute;
+    top: 4em;
+    right: 0;
+    z-index: -1;
+    @include s.media(m) {
+      width: 40em;
+      top: 0;
+      right: 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__chath {
+    @include s.fontType03(Regular);
+    color: #6f4515;
+    opacity: 0.2;
+    font-size: 1.5em;
+    line-height: 1;
+    display: block;
+    text-align: right;
+    margin: 0 0.5em 1em;
+    padding-top: 3.5em;
+    @include s.media(m) {
+      font-size: 4em;
+      margin: 0 0.5em 1em;
+      padding-top: 0.3em;
+      opacity: 0.1;
+    }
+  }
+  &__headBox {
+    display: block;
+    margin-bottom: 3em;
+    padding-left: 1em;
+    @include s.media(m) {
+      padding-left: 13em;
+    }
+  }
+  &__title {
+    font-size: 1.875em;
+    @include s.fontType01(Light);
+    margin-bottom: 1em;
+    line-height: 1.4;
+  }
+  &__lead {
+    width: 90%;
+    position: absolute;
+    top: -1em;
+    left: 5%;
+    text-align: center;
+    @include s.media(m) {
+      width: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: unset;
+    }
+    h4 {
+      font-size: 0.8em;
+      font-family: "FOT-筑紫A丸ゴシック Std B";
+      //@include s.fontType01(Regular);
+      //font-weight: 700;
+      font-style: normal;
+      background: s.$colorType04;
+      color: #6f4515;
+      padding: 0.7em 0.5em;
+      letter-spacing: 0.1em;
+      line-height: 2em;
+      display: block;
+      line-height: 1.4;
+      @include s.media(m) {
+        font-size: 1.25em;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        display: inline-block;
+        padding: 1.5em 0.5em;
+        line-height: 1.7;
+        font-fauture-settings: initial;
+        -webkit-font-feature-settings: "initial";
+      }
+    }
+  }
+  &__sentence {
+    @include s.fontType01(Regular);
+    margin-bottom: 1em;
+    padding-right: 1em;
+    @include s.media(m) {
+      //margin-bottom:0;
+      padding-right: 0;
+    }
+  }
+  &__buttonBox {
+    display: block;
+    text-align: center;
+    padding-right: 1em;
+    @include s.media(m) {
+      text-align: right;
+      //margin-top:-2em;
+      padding-right: 25%;
+    }
+    .button--type01 {
+      a {
+        border: #fff solid 2px;
+        box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.1);
+        @include s.media(m) {
+          border: unset;
+          box-shadow: unset;
+        }
+      }
+    }
+  }
+  &__contentBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+  }
+  &__contentButton {
+    width: 90%;
+    display: block;
+    margin: 0 auto 4em;
+    @include s.media(m) {
+      width: 47%;
+      margin: 0;
+    }
+    a {
+      display: block;
+      background: rgb(109, 217, 95);
+      background: linear-gradient(
+        -45deg,
+        rgba(109, 217, 95, 1) 0%,
+        rgba(203, 219, 83, 1) 30%,
+        rgba(203, 219, 83, 1) 70%,
+        rgba(109, 217, 95, 1) 100%
+      );
+      padding: 2em 2em 3.5em;
+      position: relative;
+      opacity: 1;
+      @include s.media(m) {
+        padding: 2em 4em 5em;
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  &__copy {
+    color: #fff;
+    @include s.fontType01(Bold);
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    @include s.media(m) {
+      font-size: 1.5em;
+    }
+  }
+  &__number {
+    @include s.fontType02(Regular);
+    font-size: 6em;
+    color: #3e3e3e;
+    position: absolute;
+    top: 1.5em;
+    right: 0.5em;
+    @include s.media(m) {
+      font-size: 7.5em;
+      top: 1.2em;
+      right: 0.8em;
+    }
+  }
+  &__contentTitle {
+    font-family: "FOT-筑紫A丸ゴシック Std B";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.7em;
+    line-height: 1.4;
+    color: #3e3e3e;
+    margin-bottom: 1em;
+    @include s.media(m) {
+      font-size: 1.8em;
+      line-height: 1.7;
+    }
+    @include s.media(xl) {
+      font-size: 1.9em;
+    }
+  }
+  &__contentImage {
+    img {
+      width: 100%;
+    }
+  }
+  &__button {
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: -2.1em;
+    left: 50%;
+    margin-left: -5.5em;
+    @include s.media(m) {
+      bottom: -2em;
+      right: 4em;
+      left: unset;
+      margin-left: 0;
+    }
+    .button--type01 {
+      span {
+        border: #fff solid 2px;
+        box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.1);
+        @include s.media(m) {
+          border: unset;
+          box-shadow: unset;
+        }
+      }
+    }
+  }
 }
 
-#container #wrapper .homeBenefitBox__number{
-	top:1.1em;
-	@include s.media(m){
-		top:0.9em;
-	}
+#container #wrapper .homeBenefitBox__number {
+  top: 1.1em;
+  @include s.media(m) {
+    top: 0.9em;
+  }
 }
 
-#wrapper .homeVoiceBox{
-	margin-bottom:7em;
-	position:relative;
-	@include s.media(m){
-		margin-bottom:14em;
-	}
-	&::before{
-		content:"";
-		width:11em;
-		height:11em;
-		display:block;
-		background:#FDF2E8;
-		position:absolute;
-		top:2em;
-		left:50%;
-		margin-left:23em;
-		border-radius:50%;
-		mix-blend-mode: multiply;
-		transition: all 1s ease;
-	}
-	&__title{
-		position:relative;
-		text-align:center;
-		margin-bottom:4em;
-		h3{
-			&:nth-child(1){
-				@include s.fontType03(Regular);
-				color:#6F4515;
-				opacity:.2;
-				font-size:4em;
-				line-height:1;
-				position:absolute;
-				top:50%;
-				left:50%;
-				margin-top:-0.5em;
-				margin-left:-3em;
-				@include s.media(m){
-					font-size:5em;
-				}
-			}
-			&:nth-child(2){
-				width:8em;
-				margin:0 auto 0.8em;
-				img{
-					width:100%;
-				}
-			}
-			&:nth-child(3){
-				@include s.fontType01(Bold);
-				color:s.$colorType02;
-				font-size:1.2em;
-				margin-top:-0.5em;
-				letter-spacing:0.1em;
-				@include s.media(m){
-					font-size:1.5em;
-				}
-			}
-		}
-	}
-	&__staffBox{
-		width:100%;
-		//display:flex;
-		@include s.media(m){
-			width:90%;
-			margin-left:auto;
-			margin-right:auto;
-			display:block;
-		}
-	}
-	&__staff{
-		//width:23.6em;
-		display:block;
-		padding:0 0.5em;
-		a{
-			display:block;
-			background:#FFF  url(../img/home/bgVoice01.jpg) no-repeat center center;
-			background-size:100% auto;
-			border:#6F4515 dashed 2px;
-			position:relative;
-			border-radius:0.5em;
-			opacity:1;
-			margin-top:0;
-			&:hover{
-				//opacity:.5;
-				@include s.media(m){
-					margin-top:-3em;
-				}
-			}
-			&::before{
-				@include s.media(m){
-					content:"";
-					width:100%;
-					height:8em;
-					display:block;
-					position:absolute;
-					left:0;
-					bottom:-8em;
-				}
-			}
-		}
-		&:nth-child(even){
-			a{
-				background:#FFF  url(../img/home/bgVoice02.jpg) no-repeat center center;
-				background-size:100% auto;
-			}
-		}
-		figure{
-			img{
-				width:100%;
-			}
-		}
-		.swiper-wrapper{
-			.swiper-slide{
-				&:nth-child(even){
-					.homeVoiceBox__staff a{
-						background:#FFF  url(../img/home/bgVoice02.jpg) no-repeat center center;
-						background-size:100% auto;
-					}
-				}
-			}
-		}
-	}
-	.swiper-wrapper>div:nth-child(even){
-		.homeVoiceBox__staff a{
-			background:#FFF  url(../img/home/bgVoice02.jpg) no-repeat center center;
-			background-size:100% auto;
-		}
-	}
-	&__type{
-		width:100%;
-		display:block;
-		position:absolute;
-		bottom:-2em;
-		left:0;
-		text-align:center;
-		@include s.fontType01(Medium);
-		span{
-			display:inline-block;
-			background:s.$colorType03;
-			color:#FFF;
-			font-size:1.125em;
-			padding:0.5em 2em;
-			border-radius:4em;
-		}
-		small{
-			font-size:0.7em;
-			display:block;
-		}
-	}
+#wrapper .homeVoiceBox {
+  margin-bottom: 7em;
+  position: relative;
+  @include s.media(m) {
+    margin-bottom: 14em;
+  }
+  &::before {
+    content: "";
+    width: 11em;
+    height: 11em;
+    display: block;
+    background: #fdf2e8;
+    position: absolute;
+    top: 2em;
+    left: 50%;
+    margin-left: 23em;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    transition: all 1s ease;
+  }
+  &__title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 4em;
+    h3 {
+      &:nth-child(1) {
+        @include s.fontType03(Regular);
+        color: #6f4515;
+        opacity: 0.2;
+        font-size: 4em;
+        line-height: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -0.5em;
+        margin-left: -3em;
+        @include s.media(m) {
+          font-size: 5em;
+        }
+      }
+      &:nth-child(2) {
+        width: 8em;
+        margin: 0 auto 0.8em;
+        img {
+          width: 100%;
+        }
+      }
+      &:nth-child(3) {
+        @include s.fontType01(Bold);
+        color: s.$colorType02;
+        font-size: 1.2em;
+        margin-top: -0.5em;
+        letter-spacing: 0.1em;
+        @include s.media(m) {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+  &__staffBox {
+    width: 100%;
+    //display:flex;
+    @include s.media(m) {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+  &__staff {
+    //width:23.6em;
+    display: block;
+    padding: 0 0.5em;
+    a {
+      display: block;
+      background: #fff url(../img/home/bgVoice01.jpg) no-repeat center center;
+      background-size: 100% auto;
+      border: #6f4515 dashed 2px;
+      position: relative;
+      border-radius: 0.5em;
+      opacity: 1;
+      margin-top: 0;
+      &:hover {
+        //opacity:.5;
+        @include s.media(m) {
+          margin-top: -3em;
+        }
+      }
+      &::before {
+        @include s.media(m) {
+          content: "";
+          width: 100%;
+          height: 8em;
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: -8em;
+        }
+      }
+    }
+    &:nth-child(even) {
+      a {
+        background: #fff url(../img/home/bgVoice02.jpg) no-repeat center center;
+        background-size: 100% auto;
+      }
+    }
+    figure {
+      img {
+        width: 100%;
+      }
+    }
+    .swiper-wrapper {
+      .swiper-slide {
+        &:nth-child(even) {
+          .homeVoiceBox__staff a {
+            background: #fff url(../img/home/bgVoice02.jpg) no-repeat center
+              center;
+            background-size: 100% auto;
+          }
+        }
+      }
+    }
+  }
+  .swiper-wrapper > div:nth-child(even) {
+    .homeVoiceBox__staff a {
+      background: #fff url(../img/home/bgVoice02.jpg) no-repeat center center;
+      background-size: 100% auto;
+    }
+  }
+  &__type {
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: -2em;
+    left: 0;
+    text-align: center;
+    @include s.fontType01(Medium);
+    span {
+      display: inline-block;
+      background: s.$colorType03;
+      color: #fff;
+      font-size: 1.125em;
+      padding: 0.5em 2em;
+      border-radius: 4em;
+    }
+    small {
+      font-size: 0.7em;
+      display: block;
+    }
+  }
 }
 
-#wrapper .homeMessageBox{
-	margin-bottom:9em;
-	.inBase{
-		display:block;
-		position:relative;
-		@include s.media(m){
-			display:flex;
-		}
-		&::before{
-			content:"";
-			width:11em;
-			height:11em;
-			display:block;
-			background:#FAE3C4;
-			position:absolute;
-			bottom:-15em;
-			left:50%;
-			margin-left:25em;
-			border-radius:50%;
-		}
-		&::after{
-			content:"";
-			width:15.6em;
-			height:15.6em;
-			display:block;
-			border:#FDEBDB solid 1.25em;
-			position:absolute;
-			top:-4em;
-			right:-26em;
-			border-radius:50%;
-			mix-blend-mode: multiply;
-		}
-	}
-	&__title{
-		display:flex;
-		align-self: center;
-		justify-content:center;
-		flex-wrap:wrap;
-		position:relaitve;
-		z-index:2;
-		margin-bottom:1.5em;
-		@include s.media(m){
-			margin-bottom:0;
-		}
-		h3{
-			&:nth-child(1){
-				width:100%;
-				@include s.fontType03(Regular);
-				color:#3E3E3E;
-				font-size:4em;
-				line-height:1;
-				display:block;
-				text-align:center;
-				@include s.media(m){
-					font-size:5em;
-				}
-			}
-			&:nth-child(2){
-				font-size:1.4em;
-				@include s.fontType01(Light);
-				color:#3E3E3E;
-				display:block;
-				@include s.media(m){
-					font-size:1.875em;
-				}
-			}
-		}
-	}
-	&__image{
-		position:relative;
-		width:80%;
-		margin:0 auto;
-		@include s.media(m){
-			width:26.25em;
-			margin:0 0 0 -2em;
-		}
-		img{
-			width:100%;
-			z-index:1;
-			position:relative;
-		}
-		&::before{
-			content:"";
-			width:11em;
-			height:11em;
-			display:block;
-			background:#FDF2E8;
-			background:#F8E1CE;
-			position:absolute;
-			top:-6em;
-			left:-6em;
-			//mix-blend-mode: multiply;
-			border-radius:50%;
-			transition: all 1s ease;
-		}
-	}
-	&__information{
-		display:block;
-		@include s.media(m){
-			width:36em;
-			padding-left:4em;
-		}
-		&::before{
-			content:"";
-			width:11em;
-			height:11em;
-			display:block;
-			background:#FDF2E8;
-			background:#F8E1CE;
-			position:absolute;
-			bottom:-6em;
-			left:-4em;
-			border-radius:50%;
-			//mix-blend-mode: multiply;
-		}
-		&::after{
-			content:"";
-			width:15.6em;
-			height:15.6em;
-			display:block;
-			border:#FDEBDB solid 1.25em;
-			position:absolute;
-			bottom:-14em;
-			left:-12em;
-			border-radius:50%;
-			mix-blend-mode: multiply;
-		}
-	}
-	&__lead{
-		font-size:1.4em;
-		font-family: "FOT-筑紫A丸ゴシック Std B";
-		font-weight: 700;
-		font-style: normal;
-		margin-top:1em;
-		margin-bottom:1em;
-		@include s.media(m){
-			font-size:1.875em;
-		}
-	}
-	&__sentence{
-		@include s.fontType01(Regular);
-		margin-bottom:2em;
-	}
-	&__name{
-		@include s.fontType01(Regular);
-		font-size:1.375em;
-		margin-bottom:2em;
-		text-align:right;
-		@include s.media(m){
-			text-align:left;
-		}
-	}
-	&__button{
-		text-align:center;
-		@include s.media(m){
-			text-align:left;
-		}
-	}
+#wrapper .homeMessageBox {
+  margin-bottom: 9em;
+  .inBase {
+    display: block;
+    position: relative;
+    @include s.media(m) {
+      display: flex;
+    }
+    &::before {
+      content: "";
+      width: 11em;
+      height: 11em;
+      display: block;
+      background: #fae3c4;
+      position: absolute;
+      bottom: -15em;
+      left: 50%;
+      margin-left: 25em;
+      border-radius: 50%;
+    }
+    &::after {
+      content: "";
+      width: 15.6em;
+      height: 15.6em;
+      display: block;
+      border: #fdebdb solid 1.25em;
+      position: absolute;
+      top: -4em;
+      right: -26em;
+      border-radius: 50%;
+      mix-blend-mode: multiply;
+    }
+  }
+  &__title {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relaitve;
+    z-index: 2;
+    margin-bottom: 1.5em;
+    @include s.media(m) {
+      margin-bottom: 0;
+    }
+    h3 {
+      &:nth-child(1) {
+        width: 100%;
+        @include s.fontType03(Regular);
+        color: #3e3e3e;
+        font-size: 4em;
+        line-height: 1;
+        display: block;
+        text-align: center;
+        @include s.media(m) {
+          font-size: 5em;
+        }
+      }
+      &:nth-child(2) {
+        font-size: 1.4em;
+        @include s.fontType01(Light);
+        color: #3e3e3e;
+        display: block;
+        @include s.media(m) {
+          font-size: 1.875em;
+        }
+      }
+    }
+  }
+  &__image {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    @include s.media(m) {
+      width: 26.25em;
+      margin: 0 0 0 -2em;
+    }
+    img {
+      width: 100%;
+      z-index: 1;
+      position: relative;
+    }
+    &::before {
+      content: "";
+      width: 11em;
+      height: 11em;
+      display: block;
+      background: #fdf2e8;
+      background: #f8e1ce;
+      position: absolute;
+      top: -6em;
+      left: -6em;
+      //mix-blend-mode: multiply;
+      border-radius: 50%;
+      transition: all 1s ease;
+    }
+  }
+  &__information {
+    display: block;
+    @include s.media(m) {
+      width: 36em;
+      padding-left: 4em;
+    }
+    &::before {
+      content: "";
+      width: 11em;
+      height: 11em;
+      display: block;
+      background: #fdf2e8;
+      background: #f8e1ce;
+      position: absolute;
+      bottom: -6em;
+      left: -4em;
+      border-radius: 50%;
+      //mix-blend-mode: multiply;
+    }
+    &::after {
+      content: "";
+      width: 15.6em;
+      height: 15.6em;
+      display: block;
+      border: #fdebdb solid 1.25em;
+      position: absolute;
+      bottom: -14em;
+      left: -12em;
+      border-radius: 50%;
+      mix-blend-mode: multiply;
+    }
+  }
+  &__lead {
+    font-size: 1.4em;
+    font-family: "FOT-筑紫A丸ゴシック Std B";
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    @include s.media(m) {
+      font-size: 1.875em;
+    }
+  }
+  &__sentence {
+    @include s.fontType01(Regular);
+    margin-bottom: 2em;
+  }
+  &__name {
+    @include s.fontType01(Regular);
+    font-size: 1.375em;
+    margin-bottom: 2em;
+    text-align: right;
+    @include s.media(m) {
+      text-align: left;
+    }
+  }
+  &__button {
+    text-align: center;
+    @include s.media(m) {
+      text-align: left;
+    }
+  }
 }
 
-#wrapper .homeContactBox{
-	display:block;
-	background:#7ddd62 url(../img/home/bgContact.jpg) no-repeat center center;
-	margin-bottom:2em;
-	position:relative;
-	z-index:1;
-	@include s.media(m){
-		margin-bottom:0;
-	}
-	.inBase__inner{
-		position:relative;
-	}
-	&__inner{
-		display:block;
-		padding:4em 0 3em;
-		text-align:center;
-		@include s.media(m){
-			width:100%;
-			display:flex;
-			align-items:center;
-			padding:6em 0 7em;
-			text-align:left;
-		}
-	}
-	&__buttonBox{
-		width:100%;
-		display:flex;
-		justify-content:center;
-		@include s.media(m){
-			jusfity-content:flex-start;
-			display:block;
-			width:unset;
-		}
-	}
-	&__title{
-		font-size:6.25em;
-		@include s.fontType03(Regular);
-		color:#FFF;
-		position:absolute;
-		top:-0.6em;
-		left:-0.7em;
-	}
-	&__lead{
-		color:#3E3E3E;
-		font-size:1.875em;
-		border-bottom:#3E3E3E solid 1px;
-		@include s.media(m){
-			margin-right:2em;
-		}
-		@include s.media(l){
-			font-size:1.8em;
-		}
-	}
-	&__content{
-		@include s.media(m){
-			display:flex;
-			width:37em;
-		}
-		p{
-			@include s.fontType04(Medium);
-			font-size:2.125em;
-			margin-bottom:0.5em;
-			@include s.media(m){
-				width:9em;
-			}
-			span{
-				font-size:0.4em;
-				border:#3E3E3E solid 1px;
-				padding:0 1em;
-				@include s.fontType04(Regular);
-				display:inline-block;
-				margin-right:1em;
-				vertical-align:middle;
-			}
-		}
-	}
-	&__button{
-		padding:0 0.5em;
-		display:inline-block;
-		a{
-			display:inline-block;
-			background:#FFF;
-			@include s.fontType01(Medium);
-			position:relative;
-			text-align:center;
-			padding:1em 1.5em;
-			color:#000;
-			border-radius:4em;
-			font-size:1.1em;
-			transition:all .3s ease;
-			@include s.fontType01(Black);
-			box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.1);
-		}
-		&:nth-child(1){
-			a{
-				color:#09C410;
-				&:hover{
-					background:#09C410;
-					color:#FFF;
-				}
-			}
-		}
-		&:last-child{
-			a{
-				color:s.$colorType03;
-				@include s.media(m){
-					padding:0.7em 2em;
-				}
-				&:hover{
-					background:s.$colorType03;
-					color:#FFF;
-				}
-			}
-		}
-	}
+#wrapper .homeContactBox {
+  display: block;
+  background: #7ddd62 url(../img/home/bgContact.jpg) no-repeat center center;
+  margin-bottom: 2em;
+  position: relative;
+  z-index: 1;
+  @include s.media(m) {
+    margin-bottom: 0;
+  }
+  .inBase__inner {
+    position: relative;
+  }
+  &__inner {
+    display: block;
+    padding: 4em 0 3em;
+    text-align: center;
+    @include s.media(m) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 6em 0 7em;
+      text-align: left;
+    }
+  }
+  &__buttonBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @include s.media(m) {
+      jusfity-content: flex-start;
+      display: block;
+      width: unset;
+    }
+  }
+  &__title {
+    font-size: 6.25em;
+    @include s.fontType03(Regular);
+    color: #fff;
+    position: absolute;
+    top: -0.6em;
+    left: -0.7em;
+  }
+  &__lead {
+    color: #3e3e3e;
+    font-size: 1.875em;
+    border-bottom: #3e3e3e solid 1px;
+    @include s.media(m) {
+      margin-right: 2em;
+    }
+    @include s.media(l) {
+      font-size: 1.8em;
+    }
+  }
+  &__content {
+    @include s.media(m) {
+      display: flex;
+      width: 37em;
+    }
+    p {
+      @include s.fontType04(Medium);
+      font-size: 2.125em;
+      margin-bottom: 0.5em;
+      @include s.media(m) {
+        width: 9em;
+      }
+      span {
+        font-size: 0.4em;
+        border: #3e3e3e solid 1px;
+        padding: 0 1em;
+        @include s.fontType04(Regular);
+        display: inline-block;
+        margin-right: 1em;
+        vertical-align: middle;
+      }
+    }
+  }
+  &__button {
+    padding: 0 0.5em;
+    display: inline-block;
+    a {
+      display: inline-block;
+      background: #fff;
+      @include s.fontType01(Medium);
+      position: relative;
+      text-align: center;
+      padding: 1em 1.5em;
+      color: #000;
+      border-radius: 4em;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+      @include s.fontType01(Black);
+      box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.1);
+    }
+    &:nth-child(1) {
+      a {
+        color: #09c410;
+        &:hover {
+          background: #09c410;
+          color: #fff;
+        }
+      }
+    }
+    &:last-child {
+      a {
+        color: s.$colorType03;
+        @include s.media(m) {
+          padding: 0.7em 2em;
+        }
+        &:hover {
+          background: s.$colorType03;
+          color: #fff;
+        }
+      }
+    }
+  }
 }
 
-#wrapper .homePageBox{
-	padding-bottom:2em;
-	@include s.media(m){
-		padding-bottom:4em;
-	}
-	.inBase__inner{
-		position:relative;
-		@include s.media(m){
-			display:flex;
-			flex-wrap:wrap;
-			z-index:1;
-		}
-		&::before{
-			content:"";
-			width:11em;
-			height:11em;
-			display:block;
-			background:#FDF2E8;
-			position:absolute;
-			top:8em;
-			left:-27.8em;
-			border-radius:50%;
-			mix-blend-mode: multiply;
-		}
-		&::after{
-			content:"";
-			width:15.6em;
-			height:15.6em;
-			display:block;
-			border:#FDEBDB solid 1.25em;
-			position:absolute;
-			top:18em;
-			right:-30em;
-			border-radius:50%;
-			mix-blend-mode: multiply;
-		}
-	}
-	&__button{
-		display:block;
-		margin-bottom:4em;
-		position:relative;
-		@include s.media(m){
-			width:47%;
-			margin-bottom:4em;
-		}
-		&:nth-child(even){
-			@include s.media(m){
-				margin-left:6%;
-			}
-		}
-		&:nth-child(1){
-			@include s.media(m){
-				margin-top:-2em;
-			}
-		}
-		&:nth-child(2){
-			@include s.media(m){
-				margin-top:4em;
-			}
-		}
-		&:nth-child(3){
-			@include s.media(m){
-				margin-top:-6em;
-			}
-		}
-		a{
-			display:block;
-			position:relative;
-			&:hover{
-				color:#3E3E3E;
-				figure img{
-					transform:scale(1.05,1.05);
-				}
-				&::before{
-					transform:scale(1.05,1.05);
-					right:0.7em;
-				}
-			}
-			&::before{
-				width:3em;
-				height:3em;
-				background:#FFF;
-				border-radius:50%;
-				border:s.$colorType03 solid 1px;
-				content:"\025b8";
-				position:absolute;
-				right:1em;
-				bottom:-1.5em;
-				z-index:1;
-				color:s.$colorType03;
-				text-align:center;
-				display:flex;
-				align-items:center;
-				justify-content:center;
-				font-size:1.5em;
-				box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.1);
-				transform:scale(1,1);
-				transition:ease .3s all;
-			}
-		}
-		figure{
-			display:block;
-			overflow:hidden;
-			img{
-				width:100%;
-				transform:scale(1,1);
-				transition:ease .3s all;
-			}
-		}
-	}
-	&__content{
-		display:block;
-		position:absolute;
-		top:3em;
-		left:0;
-		width:100%;
-		@include s.media(m){
-			top:4em;
-			left:0;
-		}
-		p{
-			&:nth-child(1){
-				background:#FFF;
-				display:inline-block;
-				padding:0.1em 1em;
-				font-size:1.4em;
-				@include s.fontType01(Light);
-				margin-bottom:0.5em;
-				color:#6F4515;
-				letter-spacing:0.1em;
-				@include s.media(m){
-					font-size:1.875em;
-				}
-			}
-			&:nth-child(2){
-				display:block;
-				padding-left:45%;
-				@include s.fontType01(Regular);
-				color:#3E3E3E;
-			}
-		}
-	}
+#wrapper .homePageBox {
+  padding-bottom: 2em;
+  @include s.media(m) {
+    padding-bottom: 4em;
+  }
+  .inBase__inner {
+    position: relative;
+    @include s.media(m) {
+      display: flex;
+      flex-wrap: wrap;
+      z-index: 1;
+    }
+    &::before {
+      content: "";
+      width: 11em;
+      height: 11em;
+      display: block;
+      background: #fdf2e8;
+      position: absolute;
+      top: 8em;
+      left: -27.8em;
+      border-radius: 50%;
+      mix-blend-mode: multiply;
+    }
+    &::after {
+      content: "";
+      width: 15.6em;
+      height: 15.6em;
+      display: block;
+      border: #fdebdb solid 1.25em;
+      position: absolute;
+      top: 18em;
+      right: -30em;
+      border-radius: 50%;
+      mix-blend-mode: multiply;
+    }
+  }
+  &__button {
+    display: block;
+    margin-bottom: 4em;
+    position: relative;
+    @include s.media(m) {
+      width: 47%;
+      margin-bottom: 4em;
+    }
+    &:nth-child(even) {
+      @include s.media(m) {
+        margin-left: 6%;
+      }
+    }
+    &:nth-child(1) {
+      @include s.media(m) {
+        margin-top: -2em;
+      }
+    }
+    &:nth-child(2) {
+      @include s.media(m) {
+        margin-top: 4em;
+      }
+    }
+    &:nth-child(3) {
+      @include s.media(m) {
+        margin-top: -6em;
+      }
+    }
+    a {
+      display: block;
+      position: relative;
+      &:hover {
+        color: #3e3e3e;
+        figure img {
+          transform: scale(1.05, 1.05);
+        }
+        &::before {
+          transform: scale(1.05, 1.05);
+          right: 0.7em;
+        }
+      }
+      &::before {
+        width: 3em;
+        height: 3em;
+        background: #fff;
+        border-radius: 50%;
+        border: s.$colorType03 solid 1px;
+        content: "\025b8";
+        position: absolute;
+        right: 1em;
+        bottom: -1.5em;
+        z-index: 1;
+        color: s.$colorType03;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.1);
+        transform: scale(1, 1);
+        transition: ease 0.3s all;
+      }
+    }
+    figure {
+      display: block;
+      overflow: hidden;
+      img {
+        width: 100%;
+        transform: scale(1, 1);
+        transition: ease 0.3s all;
+      }
+    }
+  }
+  &__content {
+    display: block;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    width: 100%;
+    @include s.media(m) {
+      top: 4em;
+      left: 0;
+    }
+    p {
+      &:nth-child(1) {
+        background: #fff;
+        display: inline-block;
+        padding: 0.1em 1em;
+        font-size: 1.4em;
+        @include s.fontType01(Light);
+        margin-bottom: 0.5em;
+        color: #6f4515;
+        letter-spacing: 0.1em;
+        @include s.media(m) {
+          font-size: 1.875em;
+        }
+      }
+      &:nth-child(2) {
+        display: block;
+        padding-left: 45%;
+        @include s.fontType01(Regular);
+        color: #3e3e3e;
+      }
+    }
+  }
 }
 
-#wrapper .homeSiteBox{
-	margin-top:4em;
-	.inBase__inner{
-		position:relative;
-		@include s.media(m){
-			display:flex;
-			justify-content:space-between;
-		}
-		&::before{
-			content:"";
-			width:15.6em;
-			height:15.6em;
-			display:block;
-			border:#FDEBDB solid 1.25em;
-			position:absolute;
-			bottom:-4em;
-			left:-9em;
-			border-radius:50%;
-			z-index:-1;
-		}
-	}
-	&__button{
-		margin-bottom:2em;
-		@include s.media(m){
-			width:47%;
-			margin-bottom:4em;
-		}
-		a{
-			display:block;
-			opacity:1;
-			//border:#6F4515 dashed 2px;
-			//border-radius:1em;
-			img{
-				width:100%;
-			}
-			&:hover{
-				opacity:.5;
-			}
-		}
-	}
+#wrapper .homeSiteBox {
+  margin-top: 4em;
+  .inBase__inner {
+    position: relative;
+    @include s.media(m) {
+      display: flex;
+      justify-content: space-between;
+    }
+    &::before {
+      content: "";
+      width: 15.6em;
+      height: 15.6em;
+      display: block;
+      border: #fdebdb solid 1.25em;
+      position: absolute;
+      bottom: -4em;
+      left: -9em;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+  &__button {
+    margin-bottom: 2em;
+    @include s.media(m) {
+      width: 47%;
+      margin-bottom: 4em;
+    }
+    a {
+      display: block;
+      opacity: 1;
+      //border:#6F4515 dashed 2px;
+      //border-radius:1em;
+      img {
+        width: 100%;
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
 }
 
-#wrapper .homeBottomImageBox{
-	width:100%;
-	//display:flex;
-	margin-bottom:3em;
-	figure{
-		//width:20%;
-		padding:0 0.3em;
-		img{
-			width:100%;
-		}
-	}
+#wrapper .homeBottomImageBox {
+  width: 100%;
+  //display:flex;
+  margin-bottom: 3em;
+  figure {
+    //width:20%;
+    padding: 0 0.3em;
+    img {
+      width: 100%;
+    }
+  }
 }
